@@ -1,0 +1,208 @@
+@import "../../shared/mixins";
+
+.stream-lr-page {
+  .custom-modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 50%;
+    top: 50%;
+    width: 100%;
+    overflow: auto;
+    transform: translate(-50%, -50%);
+
+    &.show {
+      display: block; // Show modal
+    }
+  }
+
+  .custom-modal-backdrop {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+
+  &.keyboard-is-open {
+    ion-content {
+      .stream-content-holder {
+        .interactions-holder {
+          .stream-side-bar {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+
+  ion-content {
+    &::part(scroll) {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .stream-content-holder {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      width: 100%;
+      height: 100%;
+      overflow: auto;
+
+      &.controllers-hidden {
+        justify-content: center;
+      }
+
+      &.in-pip {
+        display: inline;
+
+        .stream-holder {
+          display: inline;
+          height: 100%;
+          min-height: auto;
+
+          .room-video {
+            height: 100%;
+          }
+        }
+      }
+
+      .stream-holder {
+        display: flex;
+        width: 100%;
+        overflow: auto;
+        position: relative;
+
+        &.im-host {
+          min-height: 256px;
+
+          ion-buttons.room-video-actions {
+            height: 100%;
+            justify-content: center;
+
+            @media (orientation: landscape) {
+              height: auto;
+            }
+          }
+        }
+
+        .room-video {
+          width: 100%;
+
+          &::-webkit-media-controls {
+            display: none !important;
+          }
+        }
+
+        .stream-canvas,
+        .room-canvas {
+          object-fit: contain;
+        }
+      }
+
+      .room-footer {
+        display: flex;
+        overflow: auto;
+
+        &.chat-is-open {
+          flex: 1;
+        }
+
+        .interactions-holder {
+          width: 100%;
+          display: flex;
+          align-items: flex-end;
+          overflow: auto;
+        }
+      }
+    }
+
+    .emojis-holder {
+      @include emoji;
+    }
+  }
+
+  @media (orientation: landscape) {
+    &.keyboard-is-open {
+      ion-header {
+        display: none;
+      }
+
+      ion-content {
+        .stream-content-holder {
+          .interactions-holder {
+            height: 100%;
+          }
+
+          .room-meta {
+            display: none;
+          }
+
+          .stream-holder {
+            .room-video-actions {
+              display: none;
+            }
+          }
+
+          .room-footer {
+            height: 100%;
+          }
+        }
+      }
+    }
+
+    ion-content {
+      .player-container {
+        position: relative;
+
+        ion-card,
+        ion-card-content {
+          width: 100%;
+          height: 100%;
+        }
+
+        .share-invitation-container {
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          background: rgba(30, 30, 30, 0.8);
+        }
+      }
+
+      $emoji-height: 150px;
+
+      .stream-content-holder {
+        flex-direction: row;
+        overflow: hidden;
+
+        .stream-holder {
+          .room-video {
+            height: 100%;
+          }
+        }
+
+        .room-footer {
+          position: fixed;
+          bottom: 0;
+          height: calc(100% - 76px);
+          width: calc(100% - 80px);
+
+          &.emojis-are-open {
+            bottom: $emoji-height;
+          }
+        }
+      }
+
+      .emojis-holder .emoji-mart {
+        height: auto;
+        max-height: $emoji-height;
+      }
+
+      .chat-message {
+        max-width: calc(100% - 60px);
+      }
+    }
+  }
+}

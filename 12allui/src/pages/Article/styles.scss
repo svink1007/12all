@@ -1,0 +1,17 @@
+.article-page {
+  ion-toolbar {
+    --background: transparent;
+  }
+
+  .article-content {
+    padding-top: 20px;
+    font-size: 15px;
+    color: #fff;
+    white-space: pre-line;
+  }
+
+  .article-image {
+    height: 100%;
+    width: 100%;
+  }
+}

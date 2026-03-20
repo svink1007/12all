@@ -1,0 +1,11 @@
+.channel-broadcast-page {
+  margin: 0 auto;
+  width: var(--custom-lg);
+  height: 100%;
+
+  iframe {
+    border: none;
+    width: 100%;
+    height: calc(100% - 56px);
+  }
+}

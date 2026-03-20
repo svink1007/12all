@@ -1,0 +1,14 @@
+.home-page {
+  .logo {
+    width: var(--custom-logo-header);
+    margin: 0 auto;
+  }
+
+  ion-item {
+    margin: 28px auto;
+
+    ion-img {
+      margin: 0 auto;
+    }
+  }
+}

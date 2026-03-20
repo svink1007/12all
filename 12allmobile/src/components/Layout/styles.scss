@@ -1,0 +1,33 @@
+.layout-page {
+  .layout-page-toolbar {
+    --background: var(--ion-common-toolbar-background);
+
+    .layout-back-btn {
+      --padding-start: 8px;
+    }
+
+    .layout-buttons-start,
+    .layout-buttons-end {
+      min-width: 48px;
+    }
+  }
+
+  .user-avatar {
+    $dim: 48px;
+    width: $dim;
+    height: $dim;
+    padding: 8px;
+  }
+
+  .layout-content {
+    position: relative;
+  }
+}
+
+ion-menu {
+  .menu-content {
+    ion-item:first-child {
+      margin-top: 32px;
+    }
+  }
+}

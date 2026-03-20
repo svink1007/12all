@@ -1,0 +1,17 @@
+.contacts-page {
+  .update-contacts {
+    --inner-padding-end: 8px;
+
+    ion-button {
+      ion-spinner {
+        $dim: 16px;
+        width: $dim;
+        height: $dim;
+      }
+      ion-spinner,
+      ion-icon {
+        margin-inline-end: 4px;
+      }
+    }
+  }
+}

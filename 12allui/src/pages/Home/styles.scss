@@ -1,0 +1,132 @@
+.home-page {
+
+  .join-room-icon {
+    ion-icon {
+      border: 1px solid var(--ion-color-dark);
+      border-radius: 50%;
+    }
+  }
+
+  ion-grid {
+    &.content {
+      height: calc(100% - 68px);
+      overflow: auto;
+    }
+
+    ion-col {
+      &.home-navbar-left {
+        display: flex;
+        justify-content: flex-start;
+
+        ion-searchbar {
+          border-bottom: 1px solid var(--ion-color-primary);
+          max-width: 252px;
+        }
+
+        .nav-buttons {
+          ion-button {
+            --padding-top: 20px;
+            --padding-bottom: 20px;
+
+            ion-icon {
+              border: 1px solid var(--ion-color-dark);
+              border-radius: 50%;
+              padding: 4px;
+            }
+          }
+          .semi-circular-div-active {
+            position: absolute;
+            left: -7px;
+            width: 45px;
+            height: 39px;
+            border: 1px solid var(--unnamed-color-707070);
+            background: #673248 0% 0% no-repeat padding-box;
+            border: 1px solid #707070;
+            border-radius: 28px;
+            opacity: 1;
+            margin: 0px 0px 2px 0px;
+            padding: 4px 0px 0px 5px;
+            z-index: -10
+          }
+          .semi-circular-div-inactive {
+            display: none;
+          }
+          
+          .nav-label {
+            margin-left: 5px;
+          }
+        }
+      }
+
+      &.home-navbar-right {
+        display: flex;
+        justify-content: flex-end;
+
+        .create-room {
+            .create-room-icon {
+              width: 20px;
+              font-size: 20px;
+              ion-icon {
+                margin-inline-end: 4px;
+              }
+              &:hover {
+                filter: drop-shadow(3px 5px 2px white);
+              }
+            }
+        
+            &:hover {
+              cursor: pointer;
+              text-shadow: 1px 1px 1px #fff;
+            }
+          }
+      }
+    }
+  }
+}
+
+.epg-modal {
+  .modal-wrapper {
+    width: 1000px;
+  }
+
+  ion-spinner {
+    display: block;
+    margin: auto;
+  }
+}
+
+.text-center {
+  text-align: center;
+}
+
+@media (max-width: 576px) {
+  .home-page {
+    ion-grid {
+      &.content {
+        overflow: visible;
+      }
+    }
+    ion-col {
+      &.home-navbar-left {
+        overflow: auto;
+        .nav-buttons {
+          ion-button {
+            color: white;
+          }
+        }
+      }
+      &.home-navbar-right {
+        justify-content: flex-start !important;
+        .home-filter {
+          ion-button {
+            color: white;
+            font-size: 10px;
+          }
+        }
+        .create-room {
+          font-size: 10px;
+        }
+      }
+    }
+  }
+}

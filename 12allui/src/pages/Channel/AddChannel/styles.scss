@@ -1,0 +1,131 @@
+
+.add-video-channel{
+    
+    ion-searchbar {
+        --background: transparent;
+        border: 1px solid white;
+        --placeholder-color: #fff;
+        border-radius: 12px;
+        --color: white;
+        --icon-color: rgba(255, 255, 255, 0.75);
+        --placeholder-color: rgba(255, 255, 255, 0.5);
+        --box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
+        height: 36px;
+        width: 100%
+    }
+    ion-button{
+        --border-color: #fff;
+        --border-width: 1px;
+        --border-radius: 12px;
+        text-transform: uppercase;
+        color: white;
+        --background: transparent;
+        --box-shadow: none;
+    }
+
+  .btn-select-all{
+    height: 36px;
+    width: 117px;
+    margin-bottom: 13.5px;
+    --border-radius: 12px;
+  }
+
+ 
+  .btn-all-video,.btn-my-video{
+    border-width: 1px 1px 0px 1px;
+    --border-radius: 12px 12px 0px 0px;
+    border-radius: 12px 12px 0px 0px;
+    height: 52px;
+    width: 121px;
+  }
+  .btn-video-save{
+    --background: transparent linear-gradient(180deg, #AE00B3 0%, #D50087 100%) 0 0 no-repeat padding-box !important;
+    --border-width: 0px;
+    margin-left: 32px;
+    width:133px
+  }
+  .selected-video-row{
+    padding-left: 24px;
+  }
+  
+  ion-list{
+    --background: transparent;
+    --ion-item-background: transparent;
+    --ion-item-background-activated: transparent;
+    --box-shadow: none;
+    height: calc(87vh - 380px); // 87 vh is the height of the modal , we remove the header and footer height
+    overflow-y: auto;
+
+   
+
+    &.selected-video-list{
+        padding-inline: 24px;
+        border-radius: 21px;
+        background: var(--bt-channel-background);
+
+    }
+  }
+  ion-item{
+    
+    align-items: start;
+
+    --border-color:#707070;
+    --inner-padding-end: 0px;
+
+    &:hover {
+      .remove-icon {
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
+    .remove-icon {
+      opacity: 0;
+      transform: scale(0.8);
+      margin-bottom: 4px;
+      cursor: pointer;
+      transition: all 0.2s ease-in-out;
+    }
+    &.video-list-item {
+      cursor: pointer;
+      ion-icon {
+        opacity: 0;
+        transform: scale(0.8);
+        transition: all 0.2s ease-in-out;
+      }
+      &>div:hover {
+        background: var(--bt-channel-background);
+        ion-icon {
+          opacity: 1;
+          transform: scale(1);
+          cursor: pointer;
+        }
+      }
+    }
+    &.channel-ad-break{
+      align-items: center;
+      &>div{
+        border-radius: 12px;
+        background: transparent linear-gradient(180deg, #AE00B3 0%, #D50087 100%) 0 0 no-repeat padding-box !important;
+      }
+    }
+    ion-img{
+        margin-right: 20px;
+        object-fit: cover;
+        overflow: hidden;
+        border-radius: 12px;
+        width: 121px;
+        height: 68px;
+    }
+    ion-icon{
+        color: #d4d4d4;
+        font-size: 36px;
+    }
+    .reoder-icon{
+      font-size:24px;
+    }
+    
+  }
+    ion-label{
+        font-size: 14px !important;
+    }
+}

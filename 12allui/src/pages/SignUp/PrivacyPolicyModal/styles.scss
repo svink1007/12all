@@ -1,0 +1,7 @@
+.privacy-policy-modal {
+  --min-width: 1200px;
+
+  @media (max-width: 1200px) {
+    --min-width: 100%;
+  }
+}

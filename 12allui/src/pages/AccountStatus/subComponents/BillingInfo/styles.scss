@@ -1,0 +1,51 @@
+.billing-info-status {
+  ion-radio-group {
+    display: flex;
+    flex-direction: row;
+    // align-items: center;
+    // width: 200px;
+    gap: 40px;
+    margin: 40px 0px 0px 20px;
+
+    .radio-button {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+    }
+  }
+
+  .form-inputs-row {
+    display: flex;
+    flex-direction: row;
+    // justify-content: ;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-bottom: 30px;
+    width: 100%;
+
+    .form-inputs-col-1 {
+      width: 40%;
+
+    }
+
+    .form-inputs-col-2 {
+      width: 40%;
+
+    }
+  }
+
+  .save-button {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 50%;
+    margin-left: 20px;
+
+    ion-button {
+      --background: transparent linear-gradient(180deg, #AE00B3 0%, #D50087 100%) 0% 0% no-repeat padding-box;
+      --border-radius: 12px;
+      width: 100px;
+    }
+  }
+}

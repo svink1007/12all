@@ -1,0 +1,12 @@
+ion-button.exit-room-button {
+  --padding-top: 4px;
+  --padding-bottom: 4px;
+  --padding-start: 16px;
+  --padding-end: 16px;
+  height: auto;
+
+  ion-icon {
+    transform: rotate(135deg);
+    color: var(--ion-toolbar-background);
+  }
+}

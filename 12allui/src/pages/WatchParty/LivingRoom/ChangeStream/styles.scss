@@ -1,0 +1,17 @@
+@import "src/shared/mixins";
+
+.wp-change-stream-modal {
+  @include modal-auto-height;
+
+  .my-stream-item,
+  .stream-input-item,
+  .enter-custom-stream {
+    border-bottom: 1px solid black;
+  }
+
+  .toolbar-actions {
+    --background: transparent;
+    --min-height: auto;
+    margin-top: 16px;
+  }
+}

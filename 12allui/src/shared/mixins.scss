@@ -1,0 +1,94 @@
+@mixin autofill-color($color) {
+  input:-webkit-autofill,
+  input:-webkit-autofill:hover,
+  input:-webkit-autofill:focus,
+  input:-webkit-autofill:active {
+    -webkit-box-shadow: 0 0 0 30px $color inset !important;
+    padding: 0;
+  }
+
+  @-webkit-keyframes autofill {
+    0%,
+    100% {
+      color: #666;
+      background: transparent;
+    }
+  }
+
+  input:-webkit-autofill {
+    -webkit-animation-delay: 1s; /* Safari support - any positive time runs instantly */
+    -webkit-animation-name: autofill;
+    -webkit-animation-fill-mode: both;
+  }
+}
+
+@mixin modal-auto-height {
+  --height: auto;
+
+  .modal-wrapper {
+    .ion-page {
+      position: relative;
+      contain: content;
+    }
+  }
+}
+
+@mixin fade-frames {
+  @keyframes fadein {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  @keyframes fadeout {
+    from {
+      opacity: 1;
+    }
+    to {
+      opacity: 0;
+    }
+  }
+}
+
+@mixin fixed-label-full-width {
+  .label-fixed {
+    width: 100%;
+    flex: 1;
+    min-width: auto;
+    max-width: none;
+  }
+}
+
+@mixin caret-icon {
+  font-size: 14px;
+  vertical-align: bottom;
+  opacity: .6;
+}
+
+@mixin searchable-modal {
+  @include modal-auto-height;
+  --width: 350px;
+
+  ion-content {
+    min-height: 250px;
+
+    ion-radio-group {
+      height: 250px;
+    }
+  }
+}
+
+@mixin host-default-avatar {
+  width: 40px;
+  height: 40px;
+  margin: 8px 16px 8px 0;
+  text-transform: uppercase;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--ion-color-step-250);
+}

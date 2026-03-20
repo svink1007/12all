@@ -1,0 +1,21 @@
+.about-page {
+
+  --offset-top: 30px !important;
+
+  .about-card {
+    margin-bottom: 12px;
+
+    .about-content {
+      p {
+        margin: 12px 0;
+        font-size: 16px;
+      }
+
+      .get-room {
+        text-align: center;
+        font-weight: bold;
+        font-size: 20px;
+      }
+    }
+  }
+}

@@ -1,0 +1,10 @@
+.room-header {
+  --background: transparet;
+  --min-height: auto;
+  border-bottom: 2px solid var(--ion-color-primary);
+
+  ion-title {
+    font-size: 14px;
+    padding: 8px 0;
+  }
+}

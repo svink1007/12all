@@ -1,0 +1,19 @@
+.change-room-status {
+  position: relative;
+
+  ion-icon[slot=icon-only] {
+    &.globe-private {
+      font-size: 20px !important;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+    }
+
+    &.lock {
+      position: absolute;
+      top: 0;
+      left: 0;
+      font-size: 12px;
+    }
+  }
+}

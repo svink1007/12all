@@ -1,0 +1,29 @@
+.currency-input-container {
+
+  display: flex;
+  flex-direction: column;
+  
+  .currency-input-label {
+    margin-bottom: 10px;
+  }
+
+  .currency-input-field {
+    display: flex;
+    background: white;
+    // justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    padding-left: 10px;
+
+    .cost-input {
+      background: white;
+      width: 120px;
+      border-radius: 4px;
+      color: black;
+
+      :disabled {
+        opacity: 1;
+      }
+    }
+  }
+}

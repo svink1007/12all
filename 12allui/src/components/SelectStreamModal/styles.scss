@@ -1,0 +1,36 @@
+.room-select-stream-modal {
+  .stream-logo {
+    max-width: 40px;
+    margin-inline-end: 20px;
+  }
+  
+  ion-label {
+    display: flex;
+    flex: none;
+  }
+  .stars-amount {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 5px;
+    margin-left: 20px;
+    // width: 100%;
+
+    ion-img {
+      width: 18px;
+      height: 18px;
+    }
+
+  }
+
+  ion-searchbar {
+    --background: var(--ion-item-background);
+    padding: 4px 0;
+  }
+
+  ion-list-header {
+    ion-icon {
+      margin-inline-end: 4px;
+    }
+  }
+}

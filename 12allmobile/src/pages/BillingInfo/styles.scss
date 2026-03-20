@@ -1,0 +1,41 @@
+.stars-balance-container {
+  display: flex;
+  justify-content: center;
+
+  .stars-balance-body {
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 9px 12px;
+    border: 1px solid #ffffff;
+    border-radius: 8px;
+    background-color: #191919;
+  }
+
+  p {
+    margin: 0px;
+  }
+
+  .balance-text {
+    font-size: 14px;
+    letter-spacing: -0.28px;
+    color: #bebebe;
+    margin-right: 8px;
+  }
+
+  .star-avatar {
+    width: 24px;
+    height: 24px;
+  }
+
+  .stars-balance {
+    margin-left: 8px;
+
+    p {
+      font-size: 14px;
+      letter-spacing: -0.28px;
+      color: #ffffff;
+    }
+  }
+}

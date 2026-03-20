@@ -1,0 +1,35 @@
+.icon-input-dropdown-container {
+
+  display: flex;
+  flex-direction: column;
+
+  .icon-input-dropdown-label {
+    margin-bottom: 10px;
+  }
+
+  .icon-input-dropdown-field {
+    display: flex;
+    background: white;
+    // justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    padding-left: 10px;
+
+    ion-select {
+      color: black;
+      width: 120px;
+    }
+
+  }
+}
+
+.icon-input-dropdown {
+  ion-radio {
+    opacity: 1 !important;
+  }
+
+}
+
+ion-popover {
+  --width: 400px;
+}

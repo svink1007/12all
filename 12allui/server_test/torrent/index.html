@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Stream torrent</title>
+
+  <style>
+      .row {
+          margin: 12px 0;
+      }
+
+      #select,
+      #magnet {
+          padding: 8px;
+      }
+
+      #torrent-files-row,
+      #magnet {
+          width: 500px;
+      }
+
+      #download-progress,
+      #torrent-files-row,
+      #cancel-row,
+      #file-row {
+          display: none;
+      }
+
+      #torrent-files-row h3 {
+          margin-bottom: 0;
+      }
+
+      .torrent-file-row {
+          display: flex;
+          margin: 8px 0;
+      }
+
+      .torrent-file-row span {
+          flex: 1;
+      }
+  </style>
+
+</head>
+<body>
+
+<section id="torrent-container">
+  <div class="row">
+    <select aria-label="Select" id="select">
+      <option value="magnet" selected>Magnet url</option>
+      <option value="file">Torrent file</option>
+      <option value="magnet:?xt=urn:btih:68705873A5AF5E59278E4DEEE65A5093B1719805">MP4 file</option>
+      <option value="magnet:?xt=urn:btih:ecd784e179293525d4e9976fada44fc2dcdde9b6">MP3 list</option>
+      <option value="magnet:?xt=urn:btih:cee52740bcacced289dd52162a60deb1e471f586">MP3 list low seed</option>
+    </select>
+  </div>
+
+  <div class="row" id="magnet-row">
+    <input type="text" id="magnet" placeholder="Magnet url" aria-label="Magnet url">
+  </div>
+
+  <div class="row" id="file-row">
+    <input type="file" id="file" accept=".torrent">
+  </div>
+
+  <div class="row">
+    <button id="submit">Submit</button>
+  </div>
+
+  <div class="row" id="torrent-files-row">
+    <h3>Torrent files</h3>
+
+    <div id="torrent-files-container"></div>
+  </div>
+</section>
+
+<section class="row" id="cancel-row">
+  <span>Loading torrent...</span>
+  <button id="cancel">Cancel request</button>
+</section>
+
+<video id="video" controls autoplay></video>
+
+<div id="download-progress"></div>
+
+<script>
+  let currentTorrentId = null;
+
+  const ws = new WebSocket('ws://localhost:5000/ws');
+  ws.onmessage = (({data}) => {
+    try {
+      const {id, progress} = JSON.parse(data);
+      if (currentTorrentId === id) {
+        const dpEl = document.getElementById('download-progress');
+        dpEl.style.display = 'block';
+        let pr = 100;
+        if (+progress < 100) {
+          pr = (+progress * 100).toFixed(1);
+        }
+        dpEl.innerText = `${pr}% downloaded`;
+      }
+    } catch (e) {
+      console.error(e);
+    }
+  });
+
+  document.getElementById('select').addEventListener('change', () => {
+    const magnetRowEl = document.getElementById('magnet-row');
+    const fileRowEl = document.getElementById('file-row');
+    const magnetEl = document.getElementById('magnet');
+    const selectValue = document.getElementById('select').value;
+
+    magnetEl.value = '';
+    magnetRowEl.style.display = 'none';
+    fileRowEl.style.display = 'none';
+
+    switch (selectValue) {
+      case 'magnet':
+        magnetRowEl.style.display = 'block';
+        break;
+      case 'file':
+        fileRowEl.style.display = 'block';
+        break;
+      default:
+        magnetEl.value = selectValue;
+        break;
+    }
+  });
+
+  document.getElementById('submit').addEventListener('click', () => {
+    const magnetUrl = document.getElementById('magnet').value;
+    const fileEl = document.getElementById('file');
+    const videoEl = document.getElementById('video');
+
+    const fetchData = async (body, headers) => {
+      const torrentContainerEl = document.getElementById('torrent-container');
+      const cancelRowEl = document.getElementById('cancel-row');
+      const torrentFilesEl = document.getElementById('torrent-files-row');
+
+      torrentContainerEl.style.display = 'none';
+      torrentFilesEl.style.display = 'none';
+      cancelRowEl.style.display = 'block';
+
+      document.getElementById('torrent-files-container').innerHTML = '';
+
+      const URL = 'http://localhost:5000/torrent';
+
+      const response = await fetch(URL, {
+        method: 'POST',
+        headers,
+        body
+      });
+
+      const {id, files, message} = await response.json();
+      currentTorrentId = id;
+
+      torrentContainerEl.style.display = 'block';
+      cancelRowEl.style.display = 'none';
+
+      if (!response.ok) {
+        alert(message);
+        return;
+      }
+
+      if (files.length === 1) {
+        videoEl.src = `${URL}/${id}/${files[0].index}`;
+      } else {
+        let torrentFiles = '';
+
+        files.forEach(({name, index}) => {
+          torrentFiles += `
+            <div class="torrent-file-row">
+              <span>${name}</span>
+              <button onclick="document.getElementById('video').src = \`${URL}/${id}/${index}\`">Play</button>
+            </div>
+          `;
+        });
+
+        document.getElementById('torrent-files-container').innerHTML = torrentFiles;
+        torrentFilesEl.style.display = 'block';
+      }
+    };
+
+    if (magnetUrl) {
+      const body = JSON.stringify({magnet: magnetUrl});
+      const headers = {
+        'Content-Type': 'application/json'
+      };
+      fetchData(body, headers).catch(err => alert(err));
+      return;
+    }
+
+    if (fileEl.value && fileEl.files.length) {
+      const formData = new FormData();
+      formData.append('torrent', fileEl.files[0]);
+      fetchData(formData).catch(err => alert(err));
+    }
+  });
+
+  document.getElementById('cancel').addEventListener('click', () => {
+    const magnetUrl = document.getElementById('magnet').value;
+    const fileEl = document.getElementById('file');
+
+    const removeData = async (body, headers) => {
+      const URL = 'http://localhost:5000/torrent';
+
+      await fetch(URL, {
+        method: 'DELETE',
+        headers,
+        body
+      });
+
+      document.getElementById('torrent-container').style.display = 'block';
+      document.getElementById('cancel-row').style.display = 'none';
+      document.getElementById('torrent-files-row').style.display = 'none';
+    };
+
+    if (magnetUrl) {
+      const body = JSON.stringify({magnet: magnetUrl});
+      const headers = {
+        'Content-Type': 'application/json'
+      };
+      removeData(body, headers).catch(err => alert(err));
+
+    } else if (fileEl.value && fileEl.files.length) {
+
+      const formData = new FormData();
+      formData.append('torrent', fileEl.files[0]);
+      removeData(formData).catch(err => alert(err));
+    }
+  });
+</script>
+</body>
+</html>

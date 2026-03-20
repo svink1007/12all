@@ -1,0 +1,367 @@
+.account-balance-page-container {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+
+  .account-balance-container {
+    position: relative;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 16px;
+
+    .account-balance-header {
+      .account-balance-close {
+        position: absolute;
+        width: 18px;
+        height: 18px;
+        top: var(--ion-safe-area-top, 32px);
+        left: 32px;
+      }
+
+      &-title {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        text-align: center;
+        font-size: 16px;
+
+        p {
+          margin: 0px;
+          margin: 0px;
+        }
+
+        .account-balance-header-meeting-link {
+          font-size: 12px;
+          text-align: center;
+          color: #1a73e8;
+        }
+      }
+    }
+
+    .stars-balance-container {
+      display: flex;
+      justify-content: center;
+
+      .stars-balance-body {
+        width: fit-content;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 9px 12px;
+        border: 1px solid #ffffff;
+        border-radius: 8px;
+        background-color: #191919;
+      }
+
+      p {
+        margin: 0px;
+      }
+
+      .balance-text {
+        font-size: 14px;
+        letter-spacing: -0.28px;
+        color: #bebebe;
+        margin-right: 8px;
+      }
+
+      .star-avatar {
+        width: 24px;
+        height: 24px;
+      }
+
+      .stars-balance {
+        margin-left: 8px;
+
+        p {
+          font-size: 14px;
+          letter-spacing: -0.28px;
+          color: #ffffff;
+        }
+      }
+    }
+  }
+  .manual-top-up-container {
+    margin-top: 28px;
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+
+    .top-up-information-container {
+      .top-up-title {
+        font-size: 18px;
+        letter-spacing: -0.04px;
+        color: #ffffff;
+        margin: 0px;
+      }
+
+      .top-up-info {
+        margin-top: 8px;
+        font-size: 14px;
+        letter-spacing: -0.03px;
+        color: #a5a5a5;
+        margin-bottom: 0px;
+      }
+    }
+
+    .top-up-form-fields-container {
+      display: flex;
+      justify-content: space-between;
+      padding: 8px 32px 16px 32px;
+      width: 100%;
+      border: 1px solid #a5a5a5;
+
+      .top-up-stars-input-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        gap: 16px;
+        width: 100%;
+
+        .top-up-stars-input-label {
+          font-size: 18px;
+          letter-spacing: -0.04px;
+          color: #a5a5a5;
+          text-align: center;
+          margin: 0px;
+        }
+
+        .top-up-stars-input {
+          border: 1px solid #707070;
+          border-radius: 4px;
+          background: #ffffff;
+          height: 40px;
+          color: #000000;
+        }
+
+        .input-wrapper {
+          max-width: 144px;
+          display: flex;
+          align-items: center;
+          background-color: white;
+          border-radius: 4px;
+          padding: 5px 10px;
+        }
+
+        .input-icon {
+          margin-right: 5px;
+          font-size: 1.5rem;
+        }
+
+        .input-field {
+          border: none;
+          outline: none;
+          font-size: 1rem;
+          text-align: center;
+          background-color: transparent;
+          width: 100%;
+        }
+      }
+
+      .top-up-cost-input-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        gap: 16px;
+        width: 100%;
+
+        .top-up-cost-input-label {
+          font-size: 18px;
+          letter-spacing: -0.04px;
+          color: #a5a5a5;
+          text-align: center;
+          margin: 0px;
+        }
+
+        .top-up-cost-input {
+          border: 1px solid #707070;
+          border-radius: 4px;
+          background: #ffffff;
+          height: 40px;
+          color: #000000;
+        }
+
+        .input-wrapper {
+          max-width: 144px;
+          display: flex;
+          align-items: center;
+          background-color: white;
+          border-radius: 4px;
+          padding: 5px 10px;
+        }
+
+        .input-icon {
+          margin-right: 5px;
+          font-size: 18px;
+          color: #4b4b4b;
+        }
+
+        .input-field {
+          border: none;
+          outline: none;
+          font-size: 1rem;
+          text-align: center;
+          background-color: transparent;
+          width: 100%;
+        }
+      }
+    }
+
+    .top-up-add-button {
+      font-size: 18px;
+      letter-spacing: -0.36px;
+      color: #ffffff;
+      text-transform: uppercase;
+      padding: 9px 48px 9px 48px;
+      background: transparent linear-gradient(180deg, #ae00b3 0%, #d50087 100%)
+        0% 0% no-repeat padding-box;
+      border-radius: 12px;
+    }
+  }
+  .manual-cash-out-container {
+    margin-top: 28px;
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+
+    .cash-out-information-container {
+      .cash-out-title {
+        font-size: 18px;
+        letter-spacing: -0.04px;
+        color: #ffffff;
+        margin: 0px;
+      }
+
+      .cash-out-info {
+        margin-top: 8px;
+        font-size: 14px;
+        letter-spacing: -0.03px;
+        color: #a5a5a5;
+        margin-bottom: 0px;
+      }
+    }
+
+    .cash-out-form-fields-container {
+      display: flex;
+      justify-content: space-between;
+      padding: 8px 32px 16px 32px;
+      width: 100%;
+      border: 1px solid #a5a5a5;
+
+      .cash-out-stars-input-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        gap: 16px;
+        width: 100%;
+
+        .cash-out-stars-input-label {
+          font-size: 18px;
+          letter-spacing: -0.04px;
+          color: #a5a5a5;
+          text-align: center;
+          margin: 0px;
+        }
+
+        .cash-out-stars-input {
+          border: 1px solid #707070;
+          border-radius: 4px;
+          background: #ffffff;
+          height: 40px;
+          color: #000000;
+        }
+
+        .input-wrapper {
+          max-width: 144px;
+          display: flex;
+          align-items: center;
+          background-color: white;
+          border-radius: 4px;
+          padding: 5px 10px;
+        }
+
+        .input-icon {
+          margin-right: 5px;
+          font-size: 1.5rem;
+        }
+
+        .input-field {
+          border: none;
+          outline: none;
+          font-size: 1rem;
+          text-align: center;
+          background-color: transparent;
+          width: 100%;
+        }
+      }
+
+      .cash-out-cost-input-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        gap: 16px;
+        width: 100%;
+
+        .cash-out-cost-input-label {
+          font-size: 18px;
+          letter-spacing: -0.04px;
+          color: #a5a5a5;
+          text-align: center;
+          margin: 0px;
+        }
+
+        .cash-out-cost-input {
+          border: 1px solid #707070;
+          border-radius: 4px;
+          background: #ffffff;
+          height: 40px;
+          color: #000000;
+        }
+
+        .input-wrapper {
+          max-width: 144px;
+          display: flex;
+          align-items: center;
+          background-color: white;
+          border-radius: 4px;
+          padding: 5px 10px;
+        }
+
+        .input-icon {
+          margin-right: 5px;
+          font-size: 18px;
+          color: #4b4b4b;
+        }
+
+        .input-field {
+          border: none;
+          outline: none;
+          font-size: 1rem;
+          text-align: center;
+          background-color: transparent;
+          width: 100%;
+        }
+      }
+    }
+
+    .cash-out-add-button {
+      font-size: 18px;
+      letter-spacing: -0.36px;
+      color: #ffffff;
+      text-transform: uppercase;
+      padding: 9px 48px 9px 48px;
+      background: transparent linear-gradient(180deg, #ae00b3 0%, #d50087 100%)
+        0% 0% no-repeat padding-box;
+      border-radius: 12px;
+    }
+  }
+}

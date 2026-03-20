@@ -1,0 +1,48 @@
+.layout-content {
+
+  --offset-top: 10px !important;
+
+  &::part(background),
+  &::part(scroll) {
+    top: 30px;
+    bottom: 116px;
+    height: calc(100% - 50px);
+    padding-bottom: 20px;
+  }
+
+  &.center {
+    &::part(scroll) {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    &.xl::part(scroll) {
+      @media (max-width: 1200px) {
+        display: block;
+      }
+    }
+
+    &.lg::part(scroll) {
+      @media (max-width: 992px) {
+        display: block;
+      }
+    }
+
+    &.md::part(scroll) {
+      @media (max-width: 768px) {
+        display: block;
+      }
+    }
+
+  }
+}
+
+@media (max-width: 576px) {
+  .layout-content {
+    &::part(background),
+    &::part(scroll) {
+      top: 56px;
+    }
+  }
+}

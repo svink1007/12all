@@ -1,0 +1,25 @@
+.filter-item {
+  align-items: center;
+
+  input {
+    cursor: pointer;
+  }
+
+  .caret-icon {
+    font-size: 12px;
+    vertical-align: bottom;
+    opacity: 0.6;
+    margin-right: 4px;
+  }
+}
+
+.searchable-filter-modal {
+  .filters-container {
+    overflow: auto;
+    flex: 1;
+
+    .show-selected {
+      margin-bottom: 16px;
+    }
+  }
+}

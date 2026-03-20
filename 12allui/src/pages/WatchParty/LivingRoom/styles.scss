@@ -1,0 +1,260 @@
+@import "./TopBar/mixins";
+@import "./SideBar/mixins";
+@import "../../../components/Chat/mixins";
+
+.theatre-mode {
+  display: flex !important;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  video {
+    width: 100%;
+    height: 100%;
+    object-fit: fill !important;
+  }
+}
+
+.chat-container-size{
+  width: clamp(0px,calc(100% - 60px),334px) ;
+  height: clamp(200px, calc(100vh - var(--shared-stream-header-heigh) ),400px);
+}
+
+.living-room-main {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  position: relative;
+  margin-top: 10px;
+  .top-bar-stream-share {
+    position: fixed;
+    top: 0;
+  }
+
+  &-fullscreen {
+    margin-top: 0px;
+    &.player-controller {
+      .living-room-side-bar-card {
+        bottom: 64px;
+      }
+    }
+
+    .living-room-side-features{
+      top: var(--shared-stream-header-heigh) !important;
+      .stream-debug {
+        display: none;
+      }
+    }
+    
+    .living-room-chat-container,
+    .living-room-side-features {
+      .ad {
+        display: none;
+      }
+    }
+
+    .video-room-container {
+      @include living-room-top-bar-fullscreen;
+
+      .video-room-main {
+        .video-room-inner {
+          video {
+            height: 100%;
+            width: calc(100% - var(--side-bar-width));
+          }
+
+          .channel-logo-name-container {
+            position: absolute;
+            top: 60px;
+            left: 8px;
+
+            .lr-channel-logo {
+              width: 80px;
+              height: 80px;
+            }
+          }
+
+          .player-control-bar {
+            bottom: 20%;
+          }
+        }
+
+        @include living-room-side-bar-fullscreen;
+      }
+    }
+
+    .chat-card {
+      padding-inline-end: 76px;
+
+      .chat-card-content {
+        .chat-item-input {
+          --background: rgba(79, 79, 79, 0.1);
+
+          &.item-has-focus {
+            --background: var(--ion-item-background, var(--ion-background-color, #fff))
+          }
+        }
+      }
+    }
+
+    .living-room-side-bar-card {
+      bottom: 0;
+      background-color: rgba(122, 122, 122, 0.1);
+      box-shadow: none;
+    }
+
+    
+  }
+  
+  .living-room-chat-container, &-fullscreen .living-room-chat-container {
+    position: absolute; //fixed
+    bottom: 0;
+    height: clamp(200px, calc(100vh - var(--shared-stream-header-heigh) ),400px);
+    z-index: 1;
+    @include chat-fullscreen;
+  }
+  
+  .living-room-side-features,&-fullscreen .living-room-side-features {
+    &.side-content-open {
+      border-right: 4px solid black;
+    }
+    ion-item{
+      --background: transparent;
+      --border-color:#707070 ;
+    }
+    ion-item.living-room-participant::part(native) {
+      background: transparent;
+    }
+    
+    position: absolute;
+    right:64px;
+    top: 0px;
+    height: 100%;
+    background-color: #4A4949;
+    .living-room-participants-card {
+      background-color: transparent;
+    }
+  }
+
+  .living-room-chat-container,
+  .living-room-side-features {
+
+    .ad {
+      width: 100%;
+    }
+
+    &.side-content-open {
+      justify-content: normal;
+      align-items: normal;
+
+      .ad {
+        display: none;
+      }
+    }
+  }
+
+  .video-room-container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100% !important;
+    position: relative;
+    .video-room-main {
+      display: flex;
+      height: 100%;
+      overflow: auto;
+
+      .video-room-inner {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        display: flex;
+        overflow: auto;
+
+        video {
+          width: 100%;
+          height: 100%;
+          object-fit: contain;
+        }
+
+        .channel-logo-name-container {
+          position: absolute;
+          top: 0;
+          margin: 20px;
+
+          .lr-channel-logo {
+            width: 80px;
+          }
+
+          .lr-channel-name {
+            font-size: 14px;
+            width: 100%;
+            display: block;
+            margin-top: 4px;
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+
+  .living-room-side-features {
+    flex-direction: column;
+    overflow: auto;
+
+    .stream-debug {
+      max-width: 500px;
+      flex: 1;
+    }
+  }
+
+  @media (max-width: 1500px) {
+    display: block;
+
+    .video-room-container {
+      width: 100%;
+    }
+
+    .living-room-chat-container {
+      @include chat-fullscreen;
+      @extends .chat-container-size;
+      bottom: 0;
+      z-index: 10;
+      .ad {
+        display: none;
+      }
+      position: absolute;
+    }
+
+    .living-room-side-features {
+      .debug-stream,
+      .living-room-participants-card {
+        width: 100%;
+      }
+    }
+  }
+  .give-rewards-icon{
+    position: fixed;
+    width: clamp(200px,10vw,400px);
+    bottom: 300px;
+    right:-100px;
+    z-index: 2000;
+  }
+
+  
+}
+
+.participant-theatre{
+  --background: #4A4949;
+  height: calc(100vh - var(--shared-stream-header-heigh) - 10px);
+  background-color: #4A4949;
+  .living-room-participants-card {
+    background-color: transparent;
+  }
+  ion-item{
+    --background: transparent;
+  }
+  ion-item.living-room-participant::part(native) {
+    background: transparent;
+  }
+  
+}

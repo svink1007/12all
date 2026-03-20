@@ -1,0 +1,31 @@
+@mixin broadcast-logo {
+  &::part(image) {
+    max-height: 120px;
+  }
+}
+
+@mixin broadcasts-item {
+  --padding-bottom: 12px;
+  --padding-start: 0;
+  --inner-padding-end: 0;
+  --background: transparent;
+  width: 100%;
+  display: inline-flex;
+  vertical-align: middle;
+
+  &::part(native) {
+    flex-direction: column;
+  }
+
+  //@media (max-width: 768px) {
+  //  width: 33.33%;
+  //}
+  //
+  //@media (max-width: 576px) {
+  //  width: 50%;
+  //}
+  //
+  //@media (max-width: 400px) {
+  //  width: 100%;
+  //}
+}

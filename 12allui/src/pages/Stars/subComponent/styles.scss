@@ -1,0 +1,23 @@
+@import "../../../shared/mixins";
+
+.country-code-item {
+  align-items: center;
+  border: none;
+  --background: transparent;
+  --min-height: auto;
+  --background-hover: transparent;
+  --color: rgb(220, 220, 220);
+
+  input {
+    cursor: pointer;
+  }
+
+  .caret-icon {
+    @include caret-icon;
+    margin-inline-start: 0;
+  }
+}
+
+.searchable-country-modal {
+  @include searchable-modal;
+}

@@ -1,0 +1,15 @@
+{
+  "server": {
+    "url": "http://localhost:8100",
+    "originalUrl": "http://localhost:8100"
+  },
+  "plugins": {
+    "PushNotifications": {
+      "presentationOptions": [
+        "badge",
+        "sound",
+        "alert"
+      ]
+    }
+  }
+}

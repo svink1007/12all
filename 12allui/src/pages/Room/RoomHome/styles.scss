@@ -1,0 +1,20 @@
+.room-home-page {
+  max-width: var(--custom-md);
+  margin: auto auto;
+
+  .select-fs-item {
+    align-items: flex-start;
+
+    &::part(native) {
+      flex-direction: column;
+    }
+  }
+
+  h1 {
+    font-size: 20px;
+  }
+
+  .row-item {
+    margin: 4px 0;
+  }
+}

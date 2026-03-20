@@ -1,0 +1,15 @@
+{
+  "stream": {
+    "name": "STREAM_NAME",
+    "id": "STREAM_ID",
+    "source": "STREAM_SOURCE",
+    "owner": "STREAM_OWNER"
+  },
+  "hostID": "Stream Host ID",
+  "ad": {
+    "adBreakTime": "Timestamp of Ad Detection",
+    "adSource": "Source URL of the Ad",
+    "adRuntime": "Timestamp when Ad started Running"
+  },
+  "datetime": "Date/Time when data was saved"
+}

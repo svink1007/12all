@@ -1,0 +1,28 @@
+.confirm-modal ion-modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 50px;
+  
+}
+ion-backdrop {
+  --backdrop-opacity: 0.90 !important;
+}
+
+ion-modal p {
+  font-size: 30px;
+  margin: 30px;
+}
+
+.confirm-modal-buttons {
+  display: flex;
+  flex-flow: column-reverse;
+  justify-content: center;
+  align-items: center;
+  height: 260px;
+}
+
+.modal-button-confirm {
+  font-size: larger;
+  height: 70px;
+}

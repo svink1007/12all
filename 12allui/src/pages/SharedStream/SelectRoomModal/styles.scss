@@ -1,0 +1,10 @@
+@import '../../../shared/mixins';
+
+.select-room-stream-modal {
+  @include modal-auto-height;
+
+  ion-toolbar {
+    --min-height: auto;
+    --padding-bottom: 8px;
+  }
+}

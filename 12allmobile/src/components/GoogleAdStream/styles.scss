@@ -1,0 +1,27 @@
+@import "video.js/dist/video-js.css";
+@import "videojs-ima/dist/videojs.ima.css";
+
+/* Ensures the ad container is above the video player */
+#ad-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 210; /* Higher z-index for ad container */
+}
+
+/* Video player behind ad container */
+#video-player {
+  width: 100%;
+  height: 100%;
+  z-index: 200;
+}
+
+/* Mute button with appropriate positioning and z-index */
+#mute-btn {
+  position: absolute; /* Use absolute to allow custom positioning */
+  bottom: 20px;
+  right: 20px;
+  z-index: 301; /* Ensure the button is on top of everything */
+}

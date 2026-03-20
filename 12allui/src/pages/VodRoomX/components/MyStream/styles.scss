@@ -1,0 +1,18 @@
+.my-stream-component {
+  .my-stream-item {
+    ion-buttons {
+      align-self: center;
+    }
+  }
+
+  .enter-custom-stream {
+    --background: transparent;
+  }
+
+  .stream-validation {
+    .supported-formats,
+    .media-status {
+      padding-inline-start: 16px;
+    }
+  }
+}

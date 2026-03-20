@@ -1,0 +1,51 @@
+.header-searchbar {
+  ion-item {
+    &.category-item {
+      --background: #E4E0E0;
+      --padding-top: 0;
+      --padding-bottom: 0;
+      --min-height: 40px;
+      border-top-left-radius: 12px;
+      border-bottom-left-radius: 12px;
+
+      ion-select {
+        color: black;
+      }
+    }
+
+    &.input-item {
+      --background: white;
+      --padding-top: 0;
+      --padding-bottom: 0;
+      --min-height: 40px;
+
+      ion-buttons ion-button.button-has-icon-only {
+        width: 36px;
+        height: 36px;
+        --padding-top: 8px;
+        --padding-bottom: 8px;
+        --padding-start: 8px;
+        --padding-end: 8px;
+      }
+    }
+
+    &.find {
+      --background: #E4E0E0;
+      --padding-top: 0;
+      --padding-bottom: 0;
+      --min-height: 40px;
+      border-top-right-radius: 12px;
+      border-bottom-right-radius: 12px;
+
+      ion-icon {
+        font-size: 20px;
+      }
+    }
+
+    &.button-item {
+      ion-icon {
+        font-size: 22px;
+      }
+    }
+  }
+}

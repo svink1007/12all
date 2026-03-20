@@ -1,0 +1,25 @@
+@import "src/shared/mixins";
+
+.edit-stream-modal {
+  @include modal-auto-height;
+
+  .toolbar-header {
+    margin-bottom: 12px;
+  }
+
+  .select-logo-component,
+  .language-item,
+  .genre-item,
+  .country-item,
+  .row-item {
+    margin: 4px;
+  }
+
+  .validate-button {
+    align-self: center;
+  }
+
+  .toolbar-footer {
+    margin-top: 12px;
+  }
+}

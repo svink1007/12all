@@ -1,0 +1,17 @@
+.join-lr-page {
+  .join-container {
+    width: 576px;
+
+    ion-item {
+      margin-bottom: 4px;
+    }
+
+    ion-button {
+      margin-top: 8px;
+    }
+
+    @media (max-width: 768px) {
+      width: 100%;
+    }
+  }
+}

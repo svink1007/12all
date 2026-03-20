@@ -1,0 +1,27 @@
+@import "../../../shared/mixins";
+
+.broadcast-info-modal {
+  @include modal-auto-height;
+
+  --width: 380px;
+
+  .stars-amount {
+    display: flex;
+    // position: fixed;
+    // background: black;
+    color: #10E890;
+    // padding-left: 4px;
+    // margin-top: -26px;
+    // z-index: 99;
+    // justify-content: space-around;
+    align-items: center;
+    gap: 5px;
+    // width: 50px;
+    // text-align: left;
+
+    ion-img {
+      width: 20px;
+      height: 20px;
+    }
+  }
+}

@@ -1,0 +1,67 @@
+@import "../../shared/mixins";
+
+.signup-card {
+  width: var(--custom-md);
+
+  .submit-skip-buttons {
+    display: flex;
+    column-gap: 20px;
+  }
+
+  .signup-otp-back-button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    // justify-content: center;
+
+    .back-button {
+      width: 20px;
+      height: 20px;
+      margin-right: 10px;
+      cursor: pointer;
+    }
+
+    ion-card-title {
+      margin-top: 0px;
+    }
+  }
+
+  ion-item {
+    &::part(native) {
+      border-bottom-color: #9f9f9f;
+    }
+
+    @include autofill-color(var(--ion-color-secondary));
+  }
+
+  .invalid-message {
+    display: block;
+    padding: 8px 16px 0;
+  }
+
+  .actions-row {
+    margin-top: 12px;
+  }
+
+  .signup-agreement {
+    font-size: 11px;
+
+    .agreement-terms,
+    .agreement-privacy {
+      cursor: pointer;
+    }
+  }
+
+  @media (max-width: 768px) {
+    width: 100%;
+
+    .submit-button {
+      width: 100%;
+    }
+  }
+}
+
+.country-code-select {
+  --width: 500px;
+  --max-width: unset;
+}

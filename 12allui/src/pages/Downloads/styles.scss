@@ -1,0 +1,136 @@
+.downloads-page {
+
+  --offset-top: 30px !important;
+
+  .download-card {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 60px;
+
+    ion-card-header {
+      flex: 1;
+
+      ion-card-title {
+        font-size: 60px;
+      }
+
+      ion-card-subtitle {
+        font-size: 20px;
+        margin: 32px 0;
+      }
+
+      .store-holder {
+        display: flex;
+        justify-content: flex-start;
+        margin-top: 100px;
+        background-color: transparent;
+
+        ion-router-link {
+          flex: 1;
+
+          ion-img {
+            margin-inline-end: 32px;
+
+            &::part(image) {
+              max-height: 40px;
+              width: auto;
+              height: auto;
+            }
+          }
+        }
+      }
+    }
+
+    ion-card-content {
+      flex: 1;
+    }
+  }
+
+  @media (max-width: 992px) {
+    .ad-sense-col-left {
+      display: none;
+    }
+
+    .download-card {
+      display: block;
+
+      ion-card-header {
+        .store-holder {
+          margin-top: 0;
+          justify-content: space-between;
+
+          ion-router-link {
+            ion-img {
+              margin-inline-end: 4px;
+            }
+          }
+        }
+      }
+    }
+
+    .ad-down {
+      display: none;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .download-card {
+      ion-card-header {
+        display: flex;
+        flex-direction: column-reverse;
+
+        ion-card-title {
+          font-size: 52px;
+          text-align: center;
+        }
+
+        ion-card-subtitle {
+          text-align: center;
+        }
+
+        .store-holder {
+          flex-direction: column;
+          align-items: center;
+
+          ion-router-link {
+            ion-img {
+              margin-inline-end: 0;
+              margin-bottom: 20px;
+
+              &::part(image) {
+                max-height: none;
+                max-width: 200px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @media (max-width: 576px) {
+    .download-card {
+      padding: 0;
+
+      ion-card-header {
+        ion-card-title {
+          font-size: 32px;
+        }
+
+        ion-card-subtitle {
+          margin: 12px 0;
+        }
+
+        .store-holder {
+          ion-router-link {
+            ion-img {
+              &::part(image) {
+                max-width: 160px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

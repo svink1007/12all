@@ -1,0 +1,22 @@
+@import "src/shared/mixins";
+
+.manage-blocked-ips-modal {
+  @include modal-auto-height;
+
+  ion-toolbar {
+    &.header {
+      margin-bottom: 4px;
+    }
+  }
+
+  ion-list {
+    background: transparent;
+    padding: 0;
+    max-height: 300px;
+    overflow: auto;
+
+    ion-item {
+      margin: 4px;
+    }
+  }
+}

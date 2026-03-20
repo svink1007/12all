@@ -1,0 +1,6 @@
+@mixin chat-fullscreen {
+  .chat-card .chat-card-content .chat-message ion-card-content {
+    width: 100%;
+    background-color: transparent;
+  }
+}

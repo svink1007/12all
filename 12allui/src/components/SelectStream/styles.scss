@@ -1,0 +1,39 @@
+@import "../../shared/mixins";
+
+.stream-input-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background: var(--ion-item-background);
+}
+
+.stream-input-item {
+  align-items: center;
+  flex: 1;
+
+  input {
+    cursor: pointer;
+  }
+
+  .caret-icon {
+    @include caret-icon;
+  }
+}
+
+.searchable-select-stream-modal {
+  .stream-logo {
+    max-width: 40px;
+    margin-inline-end: 20px;
+  }
+
+  ion-searchbar {
+    --background: var(--ion-item-background);
+    padding: 4px 0;
+  }
+
+  ion-list-header {
+    ion-icon {
+      margin-inline-end: 4px;
+    }
+  }
+}

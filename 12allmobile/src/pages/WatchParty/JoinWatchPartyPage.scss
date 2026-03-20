@@ -1,0 +1,17 @@
+.join-page {
+  form {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    ion-item {
+      margin-bottom: 4px;
+    }
+
+    ion-button {
+      margin-top: 20px;
+    }
+  }
+}

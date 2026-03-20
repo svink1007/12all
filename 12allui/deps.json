@@ -1,0 +1,386 @@
+{
+  "version": "0.0.1",
+  "name": "12allui",
+  "dependencies": {
+    "@base-ui-components/react": {
+      "version": "1.0.0-alpha.7",
+      "resolved": "https://registry.npmjs.org/@base-ui-components/react/-/react-1.0.0-alpha.7.tgz",
+      "overridden": false
+    },
+    "@capacitor/camera": {
+      "version": "5.0.10",
+      "resolved": "https://registry.npmjs.org/@capacitor/camera/-/camera-5.0.10.tgz",
+      "overridden": false
+    },
+    "@capacitor/core": {
+      "version": "5.7.8",
+      "resolved": "https://registry.npmjs.org/@capacitor/core/-/core-5.7.8.tgz",
+      "overridden": false
+    },
+    "@ionic/pwa-elements": {
+      "version": "3.3.0",
+      "resolved": "https://registry.npmjs.org/@ionic/pwa-elements/-/pwa-elements-3.3.0.tgz",
+      "overridden": false
+    },
+    "@ionic/react-router": {
+      "version": "6.3.1",
+      "resolved": "https://registry.npmjs.org/@ionic/react-router/-/react-router-6.3.1.tgz",
+      "overridden": false
+    },
+    "@ionic/react": {
+      "version": "6.3.1",
+      "resolved": "https://registry.npmjs.org/@ionic/react/-/react-6.3.1.tgz",
+      "overridden": false
+    },
+    "@radix-ui/react-slot": {
+      "version": "1.1.2",
+      "resolved": "https://registry.npmjs.org/@radix-ui/react-slot/-/react-slot-1.1.2.tgz",
+      "overridden": false
+    },
+    "@react-oauth/google": {
+      "version": "0.2.8",
+      "resolved": "https://registry.npmjs.org/@react-oauth/google/-/google-0.2.8.tgz",
+      "overridden": false
+    },
+    "@splidejs/react-splide": {
+      "version": "0.7.12",
+      "resolved": "https://registry.npmjs.org/@splidejs/react-splide/-/react-splide-0.7.12.tgz",
+      "overridden": false
+    },
+    "@splidejs/splide-extension-auto-scroll": {
+      "version": "0.5.3",
+      "resolved": "https://registry.npmjs.org/@splidejs/splide-extension-auto-scroll/-/splide-extension-auto-scroll-0.5.3.tgz",
+      "overridden": false
+    },
+    "@splidejs/splide-extension-grid": {
+      "version": "0.4.1",
+      "resolved": "https://registry.npmjs.org/@splidejs/splide-extension-grid/-/splide-extension-grid-0.4.1.tgz",
+      "overridden": false
+    },
+    "@testing-library/jest-dom": {
+      "version": "5.16.5",
+      "resolved": "https://registry.npmjs.org/@testing-library/jest-dom/-/jest-dom-5.16.5.tgz",
+      "overridden": false
+    },
+    "@testing-library/react": {
+      "version": "13.4.0",
+      "resolved": "https://registry.npmjs.org/@testing-library/react/-/react-13.4.0.tgz",
+      "overridden": false
+    },
+    "@testing-library/user-event": {
+      "version": "14.4.3",
+      "resolved": "https://registry.npmjs.org/@testing-library/user-event/-/user-event-14.4.3.tgz",
+      "overridden": false
+    },
+    "@types/hls.js": {
+      "version": "1.0.0",
+      "resolved": "https://registry.npmjs.org/@types/hls.js/-/hls.js-1.0.0.tgz",
+      "overridden": false
+    },
+    "@types/jest": {
+      "version": "24.9.1",
+      "resolved": "https://registry.npmjs.org/@types/jest/-/jest-24.9.1.tgz",
+      "overridden": false
+    },
+    "@types/node": {
+      "version": "14.18.32",
+      "resolved": "https://registry.npmjs.org/@types/node/-/node-14.18.32.tgz",
+      "overridden": false
+    },
+    "@types/react-dom": {
+      "version": "18.0.6",
+      "resolved": "https://registry.npmjs.org/@types/react-dom/-/react-dom-18.0.6.tgz",
+      "overridden": false
+    },
+    "@types/react-google-recaptcha": {
+      "version": "2.1.9",
+      "resolved": "https://registry.npmjs.org/@types/react-google-recaptcha/-/react-google-recaptcha-2.1.9.tgz",
+      "overridden": false
+    },
+    "@types/react-paginate": {
+      "version": "7.1.1",
+      "resolved": "https://registry.npmjs.org/@types/react-paginate/-/react-paginate-7.1.1.tgz",
+      "overridden": false
+    },
+    "@types/react-redux": {
+      "version": "7.1.24",
+      "resolved": "https://registry.npmjs.org/@types/react-redux/-/react-redux-7.1.24.tgz",
+      "overridden": false
+    },
+    "@types/react-router-dom": {
+      "version": "5.3.3",
+      "resolved": "https://registry.npmjs.org/@types/react-router-dom/-/react-router-dom-5.3.3.tgz",
+      "overridden": false
+    },
+    "@types/react-router": {
+      "version": "5.1.19",
+      "resolved": "https://registry.npmjs.org/@types/react-router/-/react-router-5.1.19.tgz",
+      "overridden": false
+    },
+    "@types/react": {
+      "version": "18.0.21",
+      "resolved": "https://registry.npmjs.org/@types/react/-/react-18.0.21.tgz",
+      "overridden": false
+    },
+    "@types/socket.io-client": {
+      "version": "3.0.0",
+      "resolved": "https://registry.npmjs.org/@types/socket.io-client/-/socket.io-client-3.0.0.tgz",
+      "overridden": false
+    },
+    "@types/url-regex-safe": {
+      "version": "1.0.0",
+      "resolved": "https://registry.npmjs.org/@types/url-regex-safe/-/url-regex-safe-1.0.0.tgz",
+      "overridden": false
+    },
+    "@types/video.js": {
+      "version": "7.3.49",
+      "resolved": "https://registry.npmjs.org/@types/video.js/-/video.js-7.3.49.tgz",
+      "overridden": false
+    },
+    "axios": {
+      "version": "0.27.2",
+      "resolved": "https://registry.npmjs.org/axios/-/axios-0.27.2.tgz",
+      "overridden": false
+    },
+    "browser-image-compression": {
+      "version": "2.0.2",
+      "resolved": "https://registry.npmjs.org/browser-image-compression/-/browser-image-compression-2.0.2.tgz",
+      "overridden": false
+    },
+    "class-variance-authority": {
+      "version": "0.7.1",
+      "resolved": "https://registry.npmjs.org/class-variance-authority/-/class-variance-authority-0.7.1.tgz",
+      "overridden": false
+    },
+    "clsx": {
+      "version": "2.1.1",
+      "resolved": "https://registry.npmjs.org/clsx/-/clsx-2.1.1.tgz",
+      "overridden": false
+    },
+    "countries-list": {
+      "version": "2.6.1",
+      "resolved": "https://registry.npmjs.org/countries-list/-/countries-list-2.6.1.tgz",
+      "overridden": false
+    },
+    "env-cmd": {
+      "version": "10.1.0",
+      "resolved": "https://registry.npmjs.org/env-cmd/-/env-cmd-10.1.0.tgz",
+      "overridden": false
+    },
+    "framer-motion": {
+      "version": "12.6.3",
+      "resolved": "https://registry.npmjs.org/framer-motion/-/framer-motion-12.6.3.tgz",
+      "overridden": false
+    },
+    "hls.js": {
+      "version": "1.2.4",
+      "resolved": "https://registry.npmjs.org/hls.js/-/hls.js-1.2.4.tgz",
+      "overridden": false
+    },
+    "i18next-http-backend": {
+      "version": "1.4.4",
+      "resolved": "https://registry.npmjs.org/i18next-http-backend/-/i18next-http-backend-1.4.4.tgz",
+      "overridden": false
+    },
+    "i18next": {
+      "version": "19.9.2",
+      "resolved": "https://registry.npmjs.org/i18next/-/i18next-19.9.2.tgz",
+      "overridden": false
+    },
+    "ionicons": {
+      "version": "5.5.4",
+      "resolved": "https://registry.npmjs.org/ionicons/-/ionicons-5.5.4.tgz",
+      "overridden": false
+    },
+    "localtunnel": {
+      "version": "2.0.2",
+      "resolved": "https://registry.npmjs.org/localtunnel/-/localtunnel-2.0.2.tgz",
+      "overridden": false
+    },
+    "lucide-react": {
+      "version": "0.487.0",
+      "resolved": "https://registry.npmjs.org/lucide-react/-/lucide-react-0.487.0.tgz",
+      "overridden": false
+    },
+    "m3u-parser-generator": {
+      "version": "5.0.1",
+      "resolved": "https://registry.npmjs.org/m3u-parser-generator/-/m3u-parser-generator-5.0.1.tgz",
+      "overridden": false
+    },
+    "nanoid": {
+      "version": "3.3.8",
+      "resolved": "https://registry.npmjs.org/nanoid/-/nanoid-3.3.8.tgz",
+      "overridden": false
+    },
+    "node-env-run": {
+      "version": "4.0.2",
+      "resolved": "https://registry.npmjs.org/node-env-run/-/node-env-run-4.0.2.tgz",
+      "overridden": false
+    },
+    "node-sass": {
+      "version": "7.0.3",
+      "resolved": "https://registry.npmjs.org/node-sass/-/node-sass-7.0.3.tgz",
+      "overridden": false
+    },
+    "react-dom": {
+      "version": "18.2.0",
+      "resolved": "https://registry.npmjs.org/react-dom/-/react-dom-18.2.0.tgz",
+      "overridden": false
+    },
+    "react-dropzone": {
+      "version": "11.7.1",
+      "resolved": "https://registry.npmjs.org/react-dropzone/-/react-dropzone-11.7.1.tgz",
+      "overridden": false
+    },
+    "react-easy-crop": {
+      "version": "3.5.3",
+      "resolved": "https://registry.npmjs.org/react-easy-crop/-/react-easy-crop-3.5.3.tgz",
+      "overridden": false
+    },
+    "react-facebook": {
+      "version": "9.0.12",
+      "resolved": "https://registry.npmjs.org/react-facebook/-/react-facebook-9.0.12.tgz",
+      "overridden": false
+    },
+    "react-google-recaptcha": {
+      "version": "3.1.0",
+      "resolved": "https://registry.npmjs.org/react-google-recaptcha/-/react-google-recaptcha-3.1.0.tgz",
+      "overridden": false
+    },
+    "react-helmet": {
+      "version": "6.1.0",
+      "resolved": "https://registry.npmjs.org/react-helmet/-/react-helmet-6.1.0.tgz",
+      "overridden": false
+    },
+    "react-hook-form": {
+      "version": "7.55.0",
+      "resolved": "https://registry.npmjs.org/react-hook-form/-/react-hook-form-7.55.0.tgz",
+      "overridden": false
+    },
+    "react-i18next": {
+      "version": "11.18.6",
+      "resolved": "https://registry.npmjs.org/react-i18next/-/react-i18next-11.18.6.tgz",
+      "overridden": false
+    },
+    "react-icons": {
+      "version": "5.5.0",
+      "resolved": "https://registry.npmjs.org/react-icons/-/react-icons-5.5.0.tgz",
+      "overridden": false
+    },
+    "react-iframe": {
+      "version": "1.8.4",
+      "resolved": "https://registry.npmjs.org/react-iframe/-/react-iframe-1.8.4.tgz",
+      "overridden": false
+    },
+    "react-languages-select": {
+      "version": "1.0.20",
+      "resolved": "https://registry.npmjs.org/react-languages-select/-/react-languages-select-1.0.20.tgz",
+      "overridden": false
+    },
+    "react-perfect-scrollbar": {
+      "version": "1.5.8",
+      "resolved": "https://registry.npmjs.org/react-perfect-scrollbar/-/react-perfect-scrollbar-1.5.8.tgz",
+      "overridden": false
+    },
+    "react-player": {
+      "version": "2.16.0",
+      "resolved": "https://registry.npmjs.org/react-player/-/react-player-2.16.0.tgz",
+      "overridden": false
+    },
+    "react-redux": {
+      "version": "7.2.9",
+      "resolved": "https://registry.npmjs.org/react-redux/-/react-redux-7.2.9.tgz",
+      "overridden": false
+    },
+    "react-router-dom": {
+      "version": "5.3.4",
+      "resolved": "https://registry.npmjs.org/react-router-dom/-/react-router-dom-5.3.4.tgz",
+      "overridden": false
+    },
+    "react-router": {
+      "version": "5.3.4",
+      "resolved": "https://registry.npmjs.org/react-router/-/react-router-5.3.4.tgz",
+      "overridden": false
+    },
+    "react-scripts": {
+      "version": "5.0.1",
+      "resolved": "https://registry.npmjs.org/react-scripts/-/react-scripts-5.0.1.tgz",
+      "overridden": false
+    },
+    "react-select": {
+      "version": "5.10.1",
+      "resolved": "https://registry.npmjs.org/react-select/-/react-select-5.10.1.tgz",
+      "overridden": false
+    },
+    "react-share": {
+      "version": "4.4.1",
+      "resolved": "https://registry.npmjs.org/react-share/-/react-share-4.4.1.tgz",
+      "overridden": false
+    },
+    "react": {
+      "version": "18.2.0",
+      "resolved": "https://registry.npmjs.org/react/-/react-18.2.0.tgz",
+      "overridden": false
+    },
+    "redux-devtools-extension": {
+      "version": "2.13.9",
+      "resolved": "https://registry.npmjs.org/redux-devtools-extension/-/redux-devtools-extension-2.13.9.tgz",
+      "overridden": false
+    },
+    "redux": {
+      "version": "4.2.0",
+      "resolved": "https://registry.npmjs.org/redux/-/redux-4.2.0.tgz",
+      "overridden": false
+    },
+    "socket.io-client": {
+      "version": "4.8.1",
+      "resolved": "https://registry.npmjs.org/socket.io-client/-/socket.io-client-4.8.1.tgz",
+      "overridden": false
+    },
+    "swiper": {
+      "version": "8.4.4",
+      "resolved": "https://registry.npmjs.org/swiper/-/swiper-8.4.4.tgz",
+      "overridden": false
+    },
+    "tailwind-merge": {
+      "version": "3.1.0",
+      "resolved": "https://registry.npmjs.org/tailwind-merge/-/tailwind-merge-3.1.0.tgz",
+      "overridden": false
+    },
+    "tailwindcss": {
+      "version": "3.4.17",
+      "resolved": "https://registry.npmjs.org/tailwindcss/-/tailwindcss-3.4.17.tgz",
+      "overridden": false
+    },
+    "tw-animate-css": {
+      "version": "1.2.5",
+      "resolved": "https://registry.npmjs.org/tw-animate-css/-/tw-animate-css-1.2.5.tgz",
+      "overridden": false
+    },
+    "typescript": {
+      "version": "4.8.4",
+      "resolved": "https://registry.npmjs.org/typescript/-/typescript-4.8.4.tgz",
+      "overridden": false
+    },
+    "url-regex-safe": {
+      "version": "3.0.0",
+      "resolved": "https://registry.npmjs.org/url-regex-safe/-/url-regex-safe-3.0.0.tgz",
+      "overridden": false
+    },
+    "video.js": {
+      "version": "7.20.3",
+      "resolved": "https://registry.npmjs.org/video.js/-/video.js-7.20.3.tgz",
+      "overridden": false
+    },
+    "videojs-ima": {
+      "version": "1.7.0",
+      "resolved": "https://registry.npmjs.org/videojs-ima/-/videojs-ima-1.7.0.tgz",
+      "overridden": false
+    },
+    "webrtc-adapter": {
+      "version": "7.7.1",
+      "resolved": "https://registry.npmjs.org/webrtc-adapter/-/webrtc-adapter-7.7.1.tgz",
+      "overridden": false
+    }
+  }
+}

@@ -1,0 +1,21 @@
+.room-top-bar {
+  @media (max-width: 360px) {
+    ion-title {
+      display: none;
+    }
+  }
+
+  ion-buttons {
+    padding-top: 3%;
+    flex: 1;
+
+    &.start-buttons {
+      justify-content: flex-start;
+      padding-inline-start: 8px;
+    }
+
+    &.end-buttons {
+      justify-content: flex-end;
+    }
+  }
+}

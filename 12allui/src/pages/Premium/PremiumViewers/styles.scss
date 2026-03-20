@@ -1,0 +1,112 @@
+.premium-viewer-layout {
+  ion-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+  }
+
+  .premium-viewer-balance-box {
+    margin-top: 30px;
+  }
+
+  .premium-package-viewer-modal {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px
+  }
+
+  .premium-viewer-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+
+    .content-header {
+      display: flex;
+      flex-direction: column-reverse;
+      justify-content: center;
+      align-items: center;
+
+
+      .viewer-header {
+        margin-top: 20px;
+      }
+
+      ion-img {
+        width: 30px;
+        height: 30px;
+      }
+    }
+
+    ion-label {
+      margin-top: 20px;
+    }
+
+    .subscription-details {
+      display: flex;
+      justify-content: space-between;
+      background: #1E1E1E;
+      width: 40%;
+      margin-top: 50px;
+      border-radius: 12px;
+
+
+      ion-radio-group {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-between;
+        margin-bottom: 40px;
+
+        .radio-button {
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          align-items: center;
+          padding: 40px 50px 0 50px;
+
+          ion-label {
+            margin-top: 0;
+            margin-left: 20px;
+          }
+        }
+      }
+
+      .star-amount-details {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+
+        .star-amount-label {
+          display: flex;
+          flex-direction: row;
+          justify-content: flex-start;
+          align-items: center;
+          padding: 40px 50px 0 50px;
+
+          ion-img {
+            width: 20px;
+          }
+
+          ion-label {
+            margin-top: 0px;
+            margin-left: 10px;
+          }
+        }
+      }
+    }
+
+    .pay-button {
+      --background: transparent linear-gradient(180deg, #ae00b3 0%, #d50087 100%) 0% 0% no-repeat padding-box;
+      --border-radius: 12px;
+      width: 133px;
+      margin-top: 30px;
+    }
+  }
+}

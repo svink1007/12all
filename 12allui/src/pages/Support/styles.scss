@@ -1,0 +1,119 @@
+.support-page {
+
+  --offset-top: 30px !important;
+
+  width: var(--custom-full-width);
+  margin: 100px auto 150px;
+
+  .post-container {
+    display: inline-block;
+    width: calc(100% - 40px);
+    margin: 32px;
+  }
+
+  .second-row {
+    display: flex;
+
+    .external-media {
+      flex: 1;
+      height: 380px;
+      display: flex;
+      flex-direction: column;
+
+      .media-card {
+        flex: 1;
+
+        .media-icon {
+          height: 60px;
+        }
+      }
+    }
+
+    .contact-us-container {
+      flex: 1;
+
+      .field-error {
+        font-size: 12px;
+        margin-top: 12px;
+        padding-inline-start: 12px;
+      }
+
+      .required {
+        font-size: 12px;
+      }
+    }
+  }
+
+  .faq-container {
+    text-align: center;
+
+    .scrollbar-container {
+      overflow: hidden !important;
+      z-index: 1000;
+    }
+
+    .accordion-content {
+      max-height: 380px;
+    }
+
+    .accordion {
+      color: #fff;
+      cursor: pointer;
+      padding: 18px;
+      margin: 2px;
+      width: 100%;
+      text-align: left;
+      border: none;
+      outline: none;
+      transition: 0.4s;
+      background-color: #3B3B3B;
+    }
+
+    .panel-header {
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+
+    .active,
+    .accordion:hover {
+      background-color: #ccc;
+    }
+
+    .panel {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.2s ease-out;
+
+      ion-item {
+        --background: transparent;
+      }
+    }
+
+    .accordion-label {
+      white-space: break-spaces !important;
+    }
+  }
+
+  .mobile-v {
+    display: none;
+  }
+
+  @media (max-width: 992px) {
+    .second-row {
+      display: none;
+    }
+
+    .mobile-v {
+      display: flex;
+
+      .media-icon {
+        height: 60px;
+      }
+    }
+  }
+}
+
+.center-spinner {
+  left: 50%;
+  top: 50%;
+}

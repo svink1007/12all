@@ -1,0 +1,9 @@
+.vod-page.layout-content::part(background), .vod-page.layout-content::part(scroll) {
+  top: 0 !important;
+  bottom: 90px !important;
+}
+
+
+.list-md {
+  margin-top: 0.75rem !important;
+}

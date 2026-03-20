@@ -1,0 +1,42 @@
+.living-room-side-bar {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  width: auto;
+  padding: 4px 8px;
+  z-index: 1;
+  &.fullscreen {
+    background: #2D2D2D;
+    top: var(--shared-stream-header-heigh) !important;
+    padding-top: 16px;
+    ion-buttons ion-button {
+      --hover: rgba(107, 107, 107, 0.4);
+    }
+  }
+
+  ion-buttons {
+    flex-direction: column;
+    overflow-y: auto;
+    overflow-x: hidden;
+
+    ion-button {
+      &.screen-share-btn.button-has-icon-only,
+      &.my-stream-share-btn.button-has-icon-only,
+      &.files-share-btn.button-has-icon-only {
+        ion-img {
+          width: 22px;
+        }
+      }
+    }
+
+   
+  }
+}
+
+.side-bar-media-popover {
+  ion-img {
+    width: 22px;
+  }
+}

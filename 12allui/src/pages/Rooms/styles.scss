@@ -1,0 +1,52 @@
+.rooms-page {
+  .filter-toolbar {
+    ion-title {
+      display: inline-flex;
+    }
+  }
+
+  .manage-rooms {
+    display: inline-flex;
+
+    ion-item {
+      --background: transparent;
+    }
+  }
+
+  ion-grid {
+    height: calc(100% - 64px);
+
+    ion-row,
+    ion-col {
+      height: 100%;
+    }
+  }
+
+  .live-rooms,
+  .upcoming-rooms {
+    .room-header {
+      --padding-start: 12px;
+
+      ion-title {
+        font-size: 18px;
+      }
+    }
+
+    ion-content {
+      height: calc(100% - 24px);
+
+      &::part(scroll) {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, 200px);
+        justify-content: space-between;
+        gap: 8px;
+      }
+
+      .live-room,
+      .upcoming-room {
+        display: inline-block;
+        width: 200px;
+      }
+    }
+  }
+}

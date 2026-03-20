@@ -1,0 +1,89 @@
+.room-meta {
+  font-size: 12px;
+  color: var(--ion-color-step-850);
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-inline-start: var(--ion-safe-area-left);
+  padding-inline-end: var(--ion-safe-area-right);
+  width: 100%;
+  z-index: 1;
+  --min-height: auto;
+  --background: transparent;
+
+  ion-item {
+    --background: transparent;
+    font-size: 12px;
+    --min-height: auto;
+  }
+
+  .network-info {
+    ion-text {
+      margin: 0 auto;
+    }
+  }
+
+  .stream-data,
+  .number-of-participants {
+    display: flex;
+  }
+
+  ion-item {
+    //justify-content: space-between;
+    //width: 100%;
+    //
+    //&::part(native) {
+    //  justify-content: space-between;
+    //  width: 100%;
+    //}
+
+    ion-icon {
+      font-size: 18px;
+      margin-inline-end: 4px;
+      color: var(--ion-color-dark);
+    }
+
+    .stream-meta {
+      display: flex;
+      align-items: center;
+      overflow: hidden;
+      flex: 1;
+
+      .stream-name {
+        display: flex;
+        align-items: center;
+
+        ion-text {
+          flex: 1;
+          white-space: nowrap;
+        }
+      }
+
+      .now-playing-schedule {
+        margin-inline-start: 4px;
+      }
+
+      ion-spinner {
+        $dim: 16px;
+        width: $dim;
+        height: $dim;
+        min-width: $dim;
+        min-height: $dim;
+        margin-left: 8px;
+      }
+    }
+
+    .number-of-participants {
+      display: flex;
+      align-items: center;
+      padding-inline-start: 8px;
+
+      ion-text {
+        flex: 1;
+      }
+    }
+  }
+
+  @media (orientation: landscape) {
+    position: absolute;
+  }
+}

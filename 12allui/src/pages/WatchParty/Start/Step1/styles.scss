@@ -1,0 +1,234 @@
+@import "../../../../shared/mixins";
+
+.wp-start-1 {
+  --background: var(--ion-background-color);
+  width: var(--custom-full-width);
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+  height: 100%;
+
+  .input-item {
+    align-items: center;
+  }
+
+  ion-card-header {
+    ion-card-title {
+      text-align: center;
+    }
+  }
+
+  ion-card-content {
+    overflow-y: auto;
+    padding-bottom: 0;
+    height: 100%;
+    $scheduledRoom: 350px;
+    $scheduledRoomMargin: 16px;
+
+    &.has-scheduled-rooms {
+      .scheduled-rooms-section {
+        width: $scheduledRoom;
+        margin-inline-end: $scheduledRoomMargin;
+        display: inline-block;
+        vertical-align: top;
+        height: 100%;
+      }
+
+      .create-room-section {
+        width: calc(100% - #{$scheduledRoom + $scheduledRoomMargin});
+        display: inline-block;
+        vertical-align: top;
+      }
+    }
+
+
+    .scheduled-rooms-section {
+      display: none;
+    }
+
+    .wp-toolbar {
+      padding-inline-end: 12px;
+    }
+
+    .divider {
+      height: 2px;
+      background-color: var(--ion-color-primary);
+      margin: 4px 0 16px;
+    }
+
+    h2 {
+      padding: 0 20px;
+    }
+
+    .select-room {
+      &::part(icon) {
+        bottom: 4px;
+      }
+    }
+
+    .sharing-item {
+      --padding-start: 0;
+      --inner-padding-end: 0;
+
+      &::part(native) {
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+      }
+
+      .sharing-item-label {
+        width: 100%;
+
+        .sharing-mode {
+          font-size: 16px;
+        }
+      }
+
+      ion-radio-group {
+        width: 100%;
+      }
+
+      .paid-room-share-col, .pay-room-share-col {
+        display: contents;
+
+        .paid-room-share-checkbox, .pay-room-share-checkbox {
+          margin-left: 10px;
+          height: 55px;
+
+          .paid-room-share, .pay-room-share {
+            display: flex;
+            flex-direction: row;
+            // justify-content: flex-start;
+            align-items: center;
+            width: 100%;
+            column-gap: 10px;
+
+            ion-img {
+              width: 20px;
+            }
+
+            .paid-room-input {
+              display: flex;
+              background: #FFFFFF;
+              border-radius: 4px;
+              max-width: 100px; 
+              max-height: 40px;
+              color: #1e1e1e;
+
+              input {
+                padding: 10px;
+              }
+            }
+
+            ion-label {
+              max-width: 100% !important;
+              
+            }
+
+            ion-label:first-of-type {
+              margin-left: 30px;
+            }
+            
+          }
+        }
+      }
+    }
+
+    .paid-item {
+      --inner-padding-end: 0;
+
+      ion-label {
+        border-bottom: 1px solid var(--ion-border-color);
+        padding-bottom: 13px;
+        margin-bottom: 0;
+        width: 100%;
+      }
+    }
+
+    .currency-col {
+      margin-inline-start: 12px;
+    }
+
+    ion-item {
+      margin-bottom: 4px;
+
+      &.input-item {
+        ion-select {
+          --placeholder-color: var(--ion-color-step-500);
+          --placeholder-opacity: 1;
+        }
+
+        .users-icon {
+          font-size: 20px;
+          position: absolute;
+          top: 0;
+          left: 0;
+        }
+
+        .block-users-icon {
+          position: absolute;
+          font-size: 12px;
+          bottom: 0;
+          right: 0;
+          background-color: #1e1e1e;
+          border-radius: 50%;
+        }
+      }
+
+      &.room-id-item {
+        align-items: center;
+      }
+    }
+  }
+
+  .select-item {
+    --padding-start: 0;
+
+    ion-item {
+      margin-bottom: 0;
+      height: 100%;
+      --min-height: 56px;
+    }
+  }
+
+  .start-footer {
+    padding-inline-start: 8px;
+  }
+
+  .create-vlr-spinner-container {
+    height: 48px;
+    width: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  @media (max-width: 1200px) {
+    width: 100%;
+  }
+
+  @media (max-width: 992px) {
+    ion-card-content {
+      &.has-scheduled-rooms {
+        .scheduled-rooms-section {
+          width: 100%;
+          margin-inline-end: 0;
+          display: block;
+          max-height: 200px;
+        }
+
+        .create-room-section {
+          width: 100%;
+          display: block;
+        }
+      }
+    }
+  }
+}
+
+.vlr-select-room-id {
+  ion-select-popover ion-list {
+    overflow: auto;
+  }
+}

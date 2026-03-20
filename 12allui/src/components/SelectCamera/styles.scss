@@ -1,0 +1,11 @@
+@import "../../shared/mixins";
+
+.select-camera-modal {
+  @include modal-auto-height;
+
+  ion-card-content {
+    .loading-container {
+      text-align: center;
+    }
+  }
+}

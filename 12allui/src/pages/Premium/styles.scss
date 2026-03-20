@@ -1,0 +1,36 @@
+.premium-layout {
+
+  --offset-top: 30px !important;
+
+  ion-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+  }
+
+  .premium-balance-box {
+    margin-top: 30px;
+  }
+}
+
+@media (min-width:800px) and (max-width: 1400px) {
+  .premium-layout {
+    .premium-card-layout {
+      .premium-card {
+        width: 50%;
+      }
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  .premium-layout {
+    .premium-card-layout {
+      .premium-card {
+        width: 90%;
+      }
+    }
+  }
+}

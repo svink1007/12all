@@ -1,0 +1,5 @@
+@import "../../shared/mixins";
+
+.wp-settings-modal {
+  @include modal-auto-height;
+}

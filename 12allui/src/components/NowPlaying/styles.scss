@@ -1,0 +1,13 @@
+.room-info-row {
+  &.schedule {
+    cursor: pointer;
+
+    ion-text {
+      text-decoration: underline;
+    }
+
+    &:hover {
+      color: var(--ion-color-primary);
+    }
+  }
+}

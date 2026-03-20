@@ -1,0 +1,24 @@
+.vlr-schedule-card-content {
+  padding: 0 10px;
+
+  .start {
+    ion-datetime {
+      padding-inline-start: 0;
+    }
+  }
+}
+
+.vlr-schedule-toolbar {
+  padding: 8px 8px 0;
+
+  ion-spinner {
+    margin-inline-end: 8px;
+    width: 20px;
+    height: 20px;
+  }
+}
+
+.vlr-select-date-time-popover {
+  --min-width: 320px;
+}
+

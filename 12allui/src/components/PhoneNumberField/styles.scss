@@ -1,0 +1,25 @@
+.phone-number-section {
+  position: relative;
+
+  .phone-number-item {
+    --min-height: 65px;
+
+    .phone-number-input {
+      input {
+        margin-inline-start: 80px;
+
+      }
+    }
+  }
+
+  .country-code {
+    position: absolute;
+    top: 28px;
+    z-index: 10;
+    width: 100%;
+
+    &.code-selected {
+      width: 100px;
+    }
+  }
+}

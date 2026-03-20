@@ -1,0 +1,11 @@
+@import "src/shared/mixins";
+
+.wp-change-file-modal {
+  @include modal-auto-height;
+
+  .toolbar-actions {
+    --background: transparent;
+    --min-height: auto;
+    margin-top: 16px;
+  }
+}

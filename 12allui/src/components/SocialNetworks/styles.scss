@@ -1,0 +1,25 @@
+.social-networks {
+  ion-buttons {
+    margin: 4px auto;
+
+    ion-button {
+      $size: 48px;
+      height: $size;
+      width: $size;
+      --padding-start: 0;
+      --padding-end: 0;
+      --padding-top: 0;
+      --padding-bottom: 0;
+      margin: 0 8px;
+    }
+
+    ion-icon {
+      font-size: 26px;
+      pointer-events: none;
+    }
+
+    button {
+      outline: none;
+    }
+  }
+}

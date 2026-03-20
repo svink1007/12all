@@ -1,0 +1,62 @@
+@import "src/shared/mixins";
+
+.upcoming-room {
+  width: 100%;
+  padding-top: 0;
+
+  ion-list-header {
+    background: black;
+  }
+
+  &:first-child {
+    margin-inline-start: 0;
+  }
+
+  &:last-child {
+    margin-inline-end: 0;
+  }
+
+  &::part(native) {
+    flex-direction: column;
+  }
+
+  .room-meta {
+    position: relative;
+    min-height: 98px;
+    width: 100%;
+
+    --padding-start: 0;
+    --inner-padding-end: 0;
+
+    &::part(native) {
+      flex-direction: column;
+    }
+
+    ion-text {
+      padding: 12px 0;
+      display: block;
+      text-align: center;
+    }
+
+    .room-logo {
+      width: 100%;
+      height: 100%;
+
+      &::part(image) {
+        max-height: 120px;
+      }
+
+      &.has-logo {
+        &::part(image) {
+          object-fit: cover;
+        }
+      }
+    }
+  }
+
+  .host {
+    .host-default-avatar {
+      @include host-default-avatar();
+    }
+  }
+}

@@ -1,0 +1,28 @@
+.canvas-wrap {
+  overflow: hidden;
+  width: 100%;
+  position: absolute;
+  z-index: -1;
+
+  &.top {
+    top: 52px;
+    transform: rotate(180deg);
+  }
+
+  &.bottom {
+    bottom: 80px;
+  }
+
+  canvas {
+    display: block;
+  }
+}
+
+@media (max-width: 576px) {
+  .canvas-wrap {
+    display: none;
+    canvas {
+      display: none;
+    }
+  }
+}

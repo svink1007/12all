@@ -1,0 +1,65 @@
+
+
+.stream-side-bar {
+  height: 100%;
+  margin: 0px ;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  width: auto;
+  padding: 8px 8px 20px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  &.fullscreen {
+    padding-top: 16px;
+    margin-top: var(--shared-stream-header-heigh);
+    /* ion-buttons ion-button {
+      --background: rgba(107, 107, 107, 0.4);
+    } */
+  }
+  .sc-ion-buttons-md-s ion-button:not(.button-round) {
+    --border-radius: 50% !important;
+  }
+
+  .button-native::after {
+    inset: 0px;
+    border-radius: 50% !important;
+    position: absolute;
+    content: "";
+    opacity: 0;
+  }
+
+  .sc-ion-buttons-md-h {
+    align-items: start !important;
+  }
+
+ 
+
+  ion-buttons {
+    flex-direction: column;
+
+    //.invite-button.button-has-icon-only,
+    //.fullscreen-button.button-has-icon-only {
+    //  margin-top: 20px;
+    //}
+
+    .chat-button ion-badge {
+      position: absolute;
+      top: -8px;
+      right: -4px;
+
+      &.show-delay {
+        animation: fadein .3s ease 0s normal forwards 1;
+
+        @keyframes fadein {
+          0% {
+            opacity: 0;
+          }
+          100% {
+            opacity: 1;
+          }
+        }
+      }
+    }
+  }
+}

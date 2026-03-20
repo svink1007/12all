@@ -1,0 +1,7 @@
+@mixin living-room-side-bar-fullscreen {
+  .living-room-side-bar {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+  }
+}

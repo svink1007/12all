@@ -1,0 +1,124 @@
+@import "../../shared/mixins";
+
+.login-card {
+  width: var(--custom-md);
+
+  ion-item {
+    &::part(native) {
+      border-bottom-color: #9f9f9f;
+    }
+
+    @include autofill-color(var(--ion-color-secondary));
+  }
+
+  .login-subheader {
+    display: flex;
+    align-items: center;
+
+    ion-button {
+      margin: 0 4px;
+    }
+  }
+
+  .remember-me-col,
+  .forgot-password-col {
+    padding: 8px 0;
+  }
+
+  .remember-me {
+    &::part(native) {
+      min-height: 32px;
+      padding-inline-start: 12px;
+    }
+
+    ion-checkbox {
+      margin: 0;
+    }
+
+    ion-label {
+      margin: 8px 12px;
+      font-size: 14px;
+    }
+  }
+
+  .forgot-password {
+    &::part(native) {
+      min-height: auto;
+    }
+
+    ion-label {
+      font-size: 12px;
+      text-align: end;
+    }
+  }
+
+  .login-g-fb-col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .google-login,
+    .facebook-login {
+      width: 100%;
+      max-width: 300px;
+      height: 44px;
+      margin: 8px 0;
+    }
+
+    .google-login {
+      --background: #ffffff;
+
+      ion-img {
+        margin-inline-end: 16px;
+        width: 20px;
+      }
+
+      ion-label {
+        color: black;
+      }
+    }
+
+    .facebook-login {
+      --background: #1877f2;
+      margin: 12px 0;
+
+      ion-icon {
+        margin-right: 8px;
+        font-size: 24px;
+        color: #ffffff;
+      }
+    }
+  }
+
+  .login-button {
+    margin-top: 4px;
+    margin-right: 5px;
+  }
+
+  .skip-anonymous {
+    background-color: #ffffff;
+    color: #000;
+    border-radius: 4px;
+  }
+
+  @media (max-width: 992px) {
+    width: 100%;
+
+    .login-button {
+      width: 100%;
+    }
+
+    .skip, .skip-anonymous {
+      width: 100%;
+    }
+
+    .login-g-fb-col {
+      align-items: flex-start;
+
+      .google-login,
+      .facebook-login {
+        max-width: none;
+      }
+    }
+  }
+}

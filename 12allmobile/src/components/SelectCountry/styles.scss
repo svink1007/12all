@@ -1,0 +1,11 @@
+@import "src/shared/mixins";
+
+.country-item {
+  align-items: center;
+
+  @include fixed-label-full-width;
+
+  .caret-icon {
+    @include caret-icon;
+  }
+}

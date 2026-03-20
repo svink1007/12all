@@ -1,0 +1,15 @@
+@import "../../shared/mixins";
+
+.genre-item {
+  align-items: center;
+
+  @include fixed-label-full-width;
+
+  input {
+    cursor: pointer;
+  }
+
+  .caret-icon {
+    @include caret-icon;
+  }
+}

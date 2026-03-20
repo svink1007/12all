@@ -1,0 +1,54 @@
+{
+  "project_info": {
+    "project_number": "995274995266",
+    "project_id": "ionic-12all",
+    "storage_bucket": "ionic-12all.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:995274995266:android:45711bf2dea01740171fdb",
+        "android_client_info": {
+          "package_name": "hub.tv.m12all"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "995274995266-iqt85sona2on8jalhkgu2tsig8b45etb.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "hub.tv.m12all",
+            "certificate_hash": "57835259612a90278258e574d03ed5565a1c5b97"
+          }
+        },
+        {
+          "client_id": "995274995266-votb9g4pantstcgh95kf4io81fplq4nl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAL_0QYt3fC1MRzjreHpfMB3hvnoXG1DeI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "995274995266-votb9g4pantstcgh95kf4io81fplq4nl.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "995274995266-vhep2ppi7jsqb7j93fk6s7lkd2fq0ali.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.12alltv.12alltv"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

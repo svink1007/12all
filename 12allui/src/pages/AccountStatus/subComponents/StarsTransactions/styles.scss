@@ -1,0 +1,77 @@
+.star-transactions-status {
+  display: flex;
+  flex-direction: column;
+  // justify-content: space-around;
+  align-items: center;
+  margin-top: 20px;
+  height: 100%;
+  padding-right: 40px;
+  height: 60vh;
+
+  ion-grid {
+    // background: #662C4B;
+    // border-radius: 12px;
+    width: 100%;
+  }
+
+  .table-header {
+    padding-bottom: 20px;
+  }
+
+  .stars-status-table {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+
+    ion-col {
+      display: flex;
+      // justify-content: space-between;
+      align-items: center;
+      height: 60px;
+      position: relative;
+
+    }
+
+    .star-col-1 {
+      width: 25% !important;
+    }
+
+    .star-col-2 {
+      width: 30% !important;
+    }
+
+    .star-col-3 {
+      display: flex;
+      justify-content: flex-end !important;
+      align-items: center !important;
+      width: 20% !important;
+      gap: 10px;
+    }
+
+    // .star-col-4 {
+    //   display: flex;
+    //   justify-content: center;
+    //   width: 10% !important;
+    // }
+
+    ion-img {
+      width: 20px;
+      height: 20px;
+    }
+  }
+
+  .horizontal-row {
+    background-color: #989595;
+    margin-top: 0px;
+    width: 100%;
+    margin-right: 40px;
+    // padding-left: 40px;
+  }
+
+  .stars-table-spinner {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+}

@@ -1,0 +1,30 @@
+.home-header-toolbar {
+  --background: var(--custom-toolbar-color);
+
+  .home-header-with-chip {
+    // .home-header-title {
+    //   max-width: 12%;
+    // }
+    width: fit-content !important;
+
+    .ion-activatable {
+      border-radius: 4px !important;
+      background-color: transparent;
+      border: 1px solid #a4a4a4;
+
+      ion-label {
+        color: #fff;
+      }
+
+      ion-icon {
+        color: #fff;
+      }
+    }
+
+    width: 100%;
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: flex-start;
+  }
+
+}

@@ -1,0 +1,177 @@
+.popover-active {
+  position: absolute;
+  top: 125px;
+  right: 150px;
+  width: 256px;
+  height: 201px;
+  background-color: #673248;
+  border: 1px solid #707070;
+  border-radius: 7px;
+  opacity: 1;
+  z-index: 999;
+
+  .rectangular-space-div {
+      position: fixed;
+      top: 144px;
+      left: 241px;
+      .hollow-circle {
+          display: none;
+          width: 45px;
+          height: 65px;
+          top: -24px;
+          left: 25px;
+          overflow: hidden;
+          position: absolute;
+          transform: rotateX(180deg);
+          
+          &:after {
+              content: '';
+              width: 43px;
+              height: 31px;
+              border-radius: 100px;
+              background: rgba(0, 0, 0, 0);
+              position: absolute;
+              top: -36px;
+              left: -79px;
+              border: 80px solid #673248;
+          }   
+      }
+  }
+
+  .popover-title {
+      display: flex;
+      padding: 10px;
+      justify-content: center;
+      color: #dbdbdb;
+      opacity: 1;
+      font-size: 14px;
+    }
+    
+    .ion-input-div {
+      padding: 0 20px;
+      .item-native {
+        background: transparent !important;
+        padding: 0;
+        }
+      .custom-input {
+        --background: white !important;
+        --placeholder-color: black;
+        display: flex;
+        justify-content: center;
+        color: black;
+        .native-input {
+          margin-left: 20px;
+        }
+      }
+    }
+
+    .button-div {
+      display: flex;
+      width: 100%;
+      justify-content: center;
+      margin-top: 35px;
+
+      .ion-join-button {
+        background: transparent linear-gradient(90deg, #AE00B3 0%, #D50087 100%) 0 0 no-repeat padding-box;
+        width: 100px;
+        border-radius: 8px;
+      //   padding: 22px;
+      }
+    }
+}
+
+.popover-div-no-login {
+  position: relative;
+  top: 158px;
+  left: 25px;
+  width: 256px;
+  height: 201px;
+  background-color: #673248;
+  border: 1px solid #707070;
+  border-radius: 7px;
+  opacity: 1;
+  z-index: 999;
+
+  .rectangular-space-div {
+    position: fixed;
+    top: 144px;
+    left: 241px;
+    .hollow-circle {
+        display: block;
+        width: 45px;
+        height: 65px;
+        top: -24px;
+        left: -115px;
+        overflow: hidden;
+        position: absolute;
+        transform: rotateX(180deg);
+        
+        &:after {
+            content: '';
+            width: 43px;
+            height: 31px;
+            border-radius: 100px;
+            background: rgba(0, 0, 0, 0);
+            position: absolute;
+            top: -36px;
+            left: -79px;
+            border: 80px solid #673248;
+        }   
+    }
+  }
+
+  .popover-title {
+    display: flex;
+    padding: 10px;
+    justify-content: center;
+    color: #dbdbdb;
+    opacity: 1;
+    font-size: 14px;
+  }
+
+  .ion-input-div {
+    padding: 0 20px;
+    .item-native {
+      background: transparent !important;
+      padding: 0;
+      }
+    .custom-input {
+      --background: white !important;
+      --placeholder-color: black;
+      display: flex;
+      justify-content: center;
+      color: black;
+      .native-input {
+        margin-left: 20px;
+      }
+    }
+  }
+
+  .button-div {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-top: 35px;
+
+    .ion-join-button {
+      background: transparent linear-gradient(90deg, #AE00B3 0%, #D50087 100%) 0 0 no-repeat padding-box;
+      width: 100px;
+      border-radius: 8px;
+    //   padding: 22px;
+    }
+  }
+}
+
+.popover-inactive {
+    display: none;
+}
+
+@media (max-width: 991px) {
+    .popover-active, .popover-div-no-login {
+        .rectangular-space-div {
+            .hollow-circle {
+                top: -32px;
+            }
+        }
+    }
+}

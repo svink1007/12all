@@ -1,0 +1,14 @@
+.room-actions {
+  width: 100%;
+  --inner-padding-end: 4px;
+  --padding-bottom: 0;
+
+  .number-of-participants {
+    --padding-start: 0;
+
+    ion-label {
+      margin-inline-start: 4px;
+      font-size: 14px;
+    }
+  }
+}

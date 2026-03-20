@@ -1,0 +1,104 @@
+.living-room-bets-bar {
+  height: 100px;
+  margin: 0;
+  display: flex;
+  justify-content: flex-end;
+  width: 653px;
+  height: 100px;
+  --background: trasparent;
+  margin: 0 auto;
+  padding: 0;
+  // padding-right: 48px;
+  z-index: 1;
+  position:absolute;
+  bottom: 0;
+  left: calc((100% - 653px) / 2 - 32px);
+
+  @media only screen and (max-width: 768px) {
+    width: 400px;
+    height: 70px;
+    position: fixed;
+    left: calc((100% - 400px) / 2 - 32px);
+    bottom: 5px;
+  }
+
+  @media only screen and (max-width: 400px) {
+      width: 100%;
+      padding: 0 10px;
+      height: 70px;
+      position: fixed;
+      left: 0;
+      bottom: 5px; 
+  }
+
+  &.fullscreen {
+    ion-buttons ion-button {
+      --background: rgba(107, 107, 107, 0.4);
+    }
+  }
+
+  div.betsButtons {
+    background-color: #662C4B;
+    border-radius: 16px;
+    max-width: 650px;
+    margin: 0 auto;
+    height: 80px;
+    overflow: hidden;
+
+    @media only screen and (max-width: 768px) {
+      height: 70px;
+    }
+  }
+
+  ion-buttons {
+    margin: 0 auto;
+    max-width: 300px;
+    gap: 19px;
+    justify-content: center;
+    
+    ion-button {
+      height: auto;
+      margin-top: 7px;
+      height: 45px;
+        @media only screen and (max-width: 768px) {
+          height: 35px;
+          margin-top: 9px;
+        }
+
+        ion-img {
+          width: auto;
+          height: 44px; 
+
+          @media only screen and (max-width: 768px) {
+            height: 35px;
+            width: auto;
+          }      
+        }
+    }
+
+    div {
+      font-size: 11px;
+      height: 20px;
+      text-align: center;
+      margin-top: 3px;
+      white-space: nowrap;
+
+      @media only screen and (max-width: 768px) {
+        font-size: 9px;
+        height: 15px;
+        margin-top: 1px;        
+      }
+    }
+  }
+}
+
+// .living-room-bets-bar::after {
+//   content: "";
+//   width: 20px;
+//   height: 20px;
+// }
+
+.shared-stream-page.fullscreen .living-room-bets-bar, .living-room-main-fullscreen .living-room-bets-bar {
+  position: fixed;
+  bottom: -7px;
+}

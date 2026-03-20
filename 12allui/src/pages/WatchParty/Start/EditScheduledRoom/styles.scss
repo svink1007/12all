@@ -1,0 +1,25 @@
+.edit-scheduled-room-modal {
+  form {
+    overflow: auto;
+
+    .row-item,
+    .share-options-item,
+    .my-stream-component,
+    .fs-room-resolution {
+      margin: 4px;
+    }
+
+    .schedule-participants {
+      margin: 4px 4px 12px;
+    }
+
+    .channel-name {
+      margin-top: 12px;
+    }
+
+    .select-item {
+      --padding-start: 0;
+      --inner-padding-end: 0;
+    }
+  }
+}

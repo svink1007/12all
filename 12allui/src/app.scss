@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.fb-page {
+  opacity: 0;
+}
+
+ion-popover [popover]:not(:popover-open):not(dialog[open]) {
+  display: contents;
+}
+
+@font-face {
+  font-family: 'SFProText';
+  src: url('./fonts/SFProText-Light.ttf') format('truetype');
+}
+.sp-text {
+  font-family: 'SFProText', sans-serif;
+}

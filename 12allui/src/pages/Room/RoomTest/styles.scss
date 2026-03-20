@@ -1,0 +1,48 @@
+.room-test-page {
+  $videoContainerWidth: 1084px;
+
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  overflow: auto;
+
+  &.fullscreen {
+    .top-bar-room-test {
+      position: fixed;
+      top: 0;
+    }
+
+    .content-holder {
+      min-width: 100%;
+    }
+  }
+
+  .content-holder {
+    display: flex;
+    flex-direction: column;
+    width: $videoContainerWidth;
+    height: 100%;
+
+    .stream-holder {
+      width: 100%;
+      height: 100%;
+      overflow: auto;
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .stream-room-container {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+
+        .stream-room-video {
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+  }
+}

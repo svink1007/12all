@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">One2All HUB</string>
+    <string name="title_activity_main">One2All HUB</string>
+    <string name="package_name">hub.tv.m12all</string>
+    <string name="custom_url_scheme">hub.tv.m12all</string>
+<!--    <string name="admob_app_id">ca-app-pub-7855840777576985~6371602194</string>-->
+    <string name="admob_app_id">ca-app-pub-7855840777576985~8109181810</string>
+    <string name="facebook_app_id">1084210942037882</string>
+</resources>

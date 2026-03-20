@@ -1,0 +1,18 @@
+.promotions-component {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  ion-router-link {
+    padding: 8px;
+  }
+
+  ion-img {
+    max-width: 200px;
+
+    &::part(image) {
+      border-radius: 4px;
+    }
+  }
+}

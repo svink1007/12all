@@ -1,0 +1,47 @@
+.genre-page {
+  // &::part(scroll) {
+  //   display: flex;
+  //   flex-direction: column;
+  // }
+  .streams,
+  .live,
+  .upcoming {
+    background: transparent;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 200px);
+    justify-content: space-between;
+    gap: 8px;
+    padding: 16px;
+  }
+
+  ion-grid {
+    ion-col {
+      &.genre-navbar-right {
+        display: flex;
+        justify-content: flex-end;
+        min-width: 100%;
+
+        .home-filter {
+          ion-button {
+            border-radius: 12px;
+            background: transparent linear-gradient(180deg, #AE00B3 0%, #D50087 100%) 0 0 no-repeat padding-box;
+          }
+        }
+        
+      }
+    }
+  }
+
+  // .infinity-content {
+  //   &::part(scroll) {
+  //     display:grid;
+  //     grid-template-columns: repeat(auto-fill, 200px);
+  //     justify-content: space-between;
+  //     gap: 8px;
+  //   }
+
+  //   .shared-stream-item {
+  //     min-height: 250px;
+  //   }
+  // }
+}

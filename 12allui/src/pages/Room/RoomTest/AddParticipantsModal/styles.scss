@@ -1,0 +1,10 @@
+@import "src/shared/mixins";
+
+.add-additional-participants-modal {
+  @include modal-auto-height;
+  --width: 300px;
+
+  .add-participants-item {
+    --border-color: var(--ion-color-dark);
+  }
+}

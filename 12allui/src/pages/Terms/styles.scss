@@ -1,0 +1,17 @@
+.terms-page {
+  --offset-top: 50px !important;
+
+  @media (max-width: 768px) {
+    --offset-top: 20px !important;
+  }
+}
+
+.term-page {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.terms-content {
+  overflow: auto !important;
+  max-height: 77vh;
+}

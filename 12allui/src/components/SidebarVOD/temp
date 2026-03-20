@@ -1,0 +1,104 @@
+GET /shared-vod
+RESPONSE
+[
+	{
+        "id": 4,
+        "title": "My video",
+        "description": "Desc",
+        "url": "my-url.com",
+        "logo": null,
+        "genre": "Action",
+        "country": null,
+        "language": "Bulgarian",
+        "is_approved": false,
+        "owner_id": 4,
+        "last_active": null,
+        "is_adult_content": false,
+        "show_till_android_version": null,
+        "duration": 12,
+        "last_watch_date": null,
+        "country_of_origin": null,
+        "audioOnly": null,
+        "created_by": null,
+        "updated_by": null,
+        "created_at": "2025-03-31T19:24:43.000Z",
+        "updated_at": "2025-03-31T19:24:43.000Z",
+        "starsAmount": null,
+        "isPrivate": false,
+        "restrictions": null
+	}
+
+]
+
+POST /shared-vod
+BODY
+{
+    "url":"my-url.com",
+    "title":"My video",
+    "description":"Desc",
+    "genre":"Action",
+    "language":"Bulgarian",
+    "is_adult_content":false,
+    "duration":12,
+    "starsAmount": 100,
+    "isPrivate": false,
+    "restrictions": "Не правете нещата във видеото у дома!"
+}
+
+RESPONSE
+	{
+        "id": 4,
+        "title": "My video",
+        "description": "Desc",
+        "url": "my-url.com",
+        "logo": null,
+        "genre": "Action",
+        "country": null,
+        "language": "Bulgarian",
+        "is_approved": false,
+        "owner_id": 4,
+        "last_active": null,
+        "is_adult_content": false,
+        "show_till_android_version": null,
+        "duration": 12,
+        "last_watch_date": null,
+        "country_of_origin": null,
+        "audioOnly": null,
+        "created_by": null,
+        "updated_by": null,
+        "created_at": "2025-03-31T19:24:43.000Z",
+        "updated_at": "2025-03-31T19:24:43.000Z",
+        "starsAmount": null,
+        "isPrivate": false,
+        "restrictions": null
+	}
+
+
+PUT /shared-vod/:id
+BODY //include only the fields that need changing
+	{
+        "title": "My video",
+        "description": "Desc",
+        "url": "my-url.com",
+        "logo": null,
+        "genre": "Action",
+        "country": null,
+        "language": "Bulgarian",
+        "is_approved": false,
+        "last_active": null,
+        "is_adult_content": false,
+        "show_till_android_version": null,
+        "duration": 12,
+        "last_watch_date": null,
+        "country_of_origin": null,
+        "audioOnly": null,
+        "starsAmount": null,
+        "isPrivate": false,
+        "restrictions": null
+	}
+
+	RESPONSE {"status":"ok"}
+
+
+DELETE /shared-vod/:id
+RESPONSE {"status":"ok"}

@@ -1,0 +1,119 @@
+.gdpr-modal {
+  display: flex;
+  width: 100%;
+  // height: 100%;
+  align-items: center;
+  justify-content: center;
+  top: 30px;
+
+  ion-modal {
+    display: flex;
+    width: 100%;
+    // height: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+#gdpr-info-modal {
+  display: flex;
+  flex-direction: row;
+
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  --background: transparent !important;
+  --box-shadow: none !important;
+
+  .modal-wrapper {
+    // flex: 1;
+    // background: transparent !important;
+    // height: 200px !important;
+    // max-height: 200 !important;
+    border-radius: 12px !important;
+
+  }
+
+  #ion-react-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // height: 80% !important;
+    border-radius: 12px;
+    max-height: 85% !important;
+    --background: transparent !important;
+    margin-top: 80px !important;
+  }
+}
+
+.gdpr-modal-content {
+  --background: #662C4B !important;
+  border-radius: 20px !important;
+  // width: 90%;
+  // height: 80% !important;
+}
+
+ion-content {
+  border-radius: 20px;
+}
+
+.modal-header {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  padding: 0 100px 0 100px;
+
+  .gdpr-modal-title {
+    color: #FFFFFF;
+    font-weight: bold;
+
+  }
+}
+
+.gdpr-modal-info-lists {
+
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  gap: 30px;
+
+  .gdpr-modal-list {
+    display: flex;
+    width: 100%;
+    // justify-content: center;
+    align-items: center;
+
+    .list-label {
+      font-size: 14px;
+    }
+
+    ion-img {
+      margin-right: 15px;
+      width: 30px;
+      height: 30px;
+      object-fit: fill;
+    }
+
+  }
+}
+
+.modal-data-info {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 0 30px 30px 30px;
+  font-size: 12px;
+}
+
+.modal-consent-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0 35px 0 35px;
+
+  ion-button {
+    --background: transparent linear-gradient(180deg, #AE00B3 0%, #D50087 100%) 0% 0% no-repeat padding-box;
+    --border-radius: 12px;
+    --box-shadow: none;
+  }
+}

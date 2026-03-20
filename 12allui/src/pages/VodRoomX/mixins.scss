@@ -1,0 +1,6 @@
+@mixin select-device-alert {
+  .select-device-alert {
+    --width: 600px;
+    --max-width: unset;
+  }
+}

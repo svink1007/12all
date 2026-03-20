@@ -1,0 +1,83 @@
+.top-bar-stream-share {
+  background-color: #19010e;
+  font-family: 'SFProText', sans-serif;
+  ion-fab-button{
+    width: 36px;
+    height: 36px;
+    --background: var(--ion-color-tertiary);
+    ion-icon{
+      font-size: 28px;
+      font-weight: 700;
+    }
+  }
+
+  ion-icon{
+    color: white;
+    &.heart-icon{
+      font-size: 26px;
+      color: rgba($color: #fff, $alpha: 0.6);
+    }
+  }
+  
+  .star-balance-display {
+    --background: transparent;
+    ion-img {
+      width: 20px;
+    }
+
+    ion-label {
+      margin-left: 8px;
+      font-size: 14px;
+    }
+  } 
+
+  --background: trasparent;
+
+  .sc-ion-buttons-md-s .button-has-icon-only.button-clear {
+    width: 52px;
+    height: 52px;
+
+    ion-icon {
+      font-size: 28px;
+    }
+  }
+
+  .room-info {
+    --background: transparent;
+
+    .room-info-row {
+      display: flex;
+      align-items: center;
+      margin-inline-start: 12px;
+
+      ion-text {
+        font-size: 12px;
+        margin-inline-start: 4px;
+      }
+
+      ion-icon {
+        font-size: 16px;
+        pointer-events: none;
+      }
+
+      ion-spinner {
+        width: 12px;
+        height: 12px;
+        margin-left: 8px;
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    .room-info {
+      &::part(native) {
+        flex-direction: column;
+        align-items: flex-end;
+      }
+
+      .room-info-row {
+        line-height: 20px;
+      }
+    }
+  }
+}

@@ -1,0 +1,67 @@
+.stream-test-page {
+  ion-grid,
+  ion-row {
+    height: 100%;
+  }
+
+  .select-stream-col {
+    height: 100%;
+
+    ion-segment {
+      background-color: var(--ion-item-background);
+      margin-bottom: 8px;
+
+      ion-segment-button {
+        max-width: unset;
+      }
+    }
+
+    .stream-table-holder {
+      height: calc(100% - 60px);
+      overflow: auto;
+    }
+
+    .custom-stream-form {
+      ion-button {
+        margin: 12px 8px 24px 0;
+      }
+    }
+  }
+
+  .play-stream-col {
+    overflow: auto;
+    height: 100%;
+
+    ion-list {
+      header {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        padding: 0 16px;
+
+        h2 {
+          font-size: 18px;
+        }
+      }
+
+      .errors {
+        max-height: 200px;
+        overflow: auto;
+      }
+    }
+  }
+
+  ion-item.row {
+    margin-bottom: 4px;
+  }
+
+  @media (max-width: 992px) {
+    .select-stream-col {
+      height: auto;
+
+      .stream-table-holder {
+        height: 300px;
+      }
+    }
+  }
+}

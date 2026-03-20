@@ -1,0 +1,19 @@
+.channels-page {
+  &::part(scroll) {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .infinity-content {
+    &::part(scroll) {
+      display:grid;
+      grid-template-columns: repeat(auto-fill, 200px);
+      justify-content: space-between;
+      gap: 8px;
+    }
+
+    .shared-stream-item {
+      min-height: 250px;
+    }
+  }
+}

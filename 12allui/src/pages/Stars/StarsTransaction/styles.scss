@@ -1,0 +1,358 @@
+.top-up-cash-out-layout {
+  overflow-y: hidden;
+  ion-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 0 30px 0;
+
+  }
+
+  .top-up-cash-out-card-layout {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 20px;
+    overflow-y: auto;
+    max-height: calc(100vh - 350px) ;
+
+    .top-up-cash-out-card {
+      padding-bottom: 16px;
+      display: flex;
+      flex-direction: column;
+      // justify-content: space-between;
+      align-items: center;
+      min-width: 30%;
+      background: transparent linear-gradient(1deg, #502B3F 0%, #662C4B 100%) 0% 0% no-repeat padding-box;
+      border-radius: 12px;
+      overflow-y: auto;
+
+
+      .top-up-cash-out-tabs {
+        border: 1px solid #F5F5F5;
+        border-radius: 19px;
+        padding: 2px;
+        width: 90%;
+        margin-top: 20px;
+
+
+
+        .tab-buttons {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-around;
+          // column-gap: 20px;
+
+          .active-button {
+            background: transparent linear-gradient(180deg, #ae00b3 0%, #d50087 100%) 0% 0% no-repeat padding-box;
+          }
+
+          ion-button {
+            width: 100%;
+            border-radius: 16px;
+            height: 40px;
+
+            ion-label {
+              color: white;
+            }
+          }
+        }
+      }
+
+      ion-card-header {
+        background: transparent;
+        margin-top: 5px;
+      }
+
+      ion-label {
+        color: #A5A5A5
+      }
+
+
+      .top-up-section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        min-height: 300px;
+        overflow-y: hidden;
+        // margin-top: 20px;
+
+        .top-up-columns {
+          display: flex;
+          justify-content: space-between;
+          padding: 0 80px;
+          margin: 20px 0 10px 0;
+          // height: 100%;
+        }
+
+        .top-up-packages {
+          display: flex;
+          flex-direction: column;
+          padding: 0 40px;
+          width: 100%;
+          overflow-y: auto;
+          height: 300px;
+
+          .top-up-package-list {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+
+            width: 100%;
+            min-height: 60px;
+            border: 1px solid #FFFFFF;
+            margin-bottom: 20px;
+            border-radius: 19px;
+            padding: 0 40px;
+            cursor: pointer;
+
+            .top-up-stars-value {
+              display: flex;
+              flex-direction: row;
+              align-items: center;
+              width: 30%;
+              text-align: left;
+
+              ion-label {
+                margin: 4px 0 0 20px;
+                color: #FFFFFF;
+              }
+
+              ion-img {
+                width: 18px;
+              }
+            }
+
+            ion-label {
+              color: #FFFFFF;
+            }
+          }
+
+          .package-list-active {
+            background-color: #FFFFFF;
+            font-weight: bolder;
+
+            .top-up-stars-value {
+              ion-label {
+                color: #000000;
+              }
+            }
+
+            ion-label {
+              color: #000000;
+            }
+          }
+
+          &::-webkit-scrollbar {
+            width: 8px;
+            background-color: transparent;
+            border-radius: 16px;
+          }
+
+          &::-webkit-scrollbar-thumb {
+            background: #911741;
+            border-radius: 16px;
+            padding: 2px;
+          }
+        }
+
+        .add-button-div {
+          width: 100%;
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          align-items: center;
+
+          .add-button {
+            --background: transparent linear-gradient(180deg, #ae00b3 0%, #d50087 100%) 0% 0% no-repeat padding-box;
+            --border-radius: 12px;
+            width: 133px;
+            height: 50px;
+            margin-top: 50px;
+            // margin-bottom: 20px;
+          }
+        }
+      }
+
+      .cash-out-section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+
+        .stars-box {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          background: #FFFFFF 0% 0% no-repeat padding-box;
+          border: 1px solid #707070;
+          border-radius: 19px;
+          width: 90%;
+          height: 130px;
+          row-gap: 20px;
+
+          .stars-input-row {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            padding: 0 40px;
+
+            .stars-input-left {
+              display: flex;
+              flex-direction: row;
+              column-gap: 20px;
+              text-align: left;
+
+              ion-label {
+                color: #000000;
+                font-weight: bolder;
+                font-size: 18px;
+              }
+            }
+
+            .stars-input-right {
+              color: #000000;
+              font-weight: bolder;
+              font-size: 18px;
+              background-color: #E2E2E2;
+              width: 150px;
+              border-radius: 14px;
+            }
+
+            ion-label {
+              color: #000000;
+              font-weight: bolder;
+              font-size: 18px;
+            }
+          }
+
+          .balance-checkbox-row {
+            width: 100%;
+            padding: 0 40px;
+            // padding-bottom: 20px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 16px;
+
+
+            .checkbox-row {
+              display: flex;
+              flex-direction: row;
+              justify-content: space-around;
+              align-items: center;
+              column-gap: 20px;
+
+              ion-checkbox {
+                --background: #FFFFFF;
+                border: 1px solid #707070;
+                border-radius: 2px;
+              }
+
+              &.checked {
+                ion-label {
+                  color: #000000;
+                }
+              }
+            }
+
+
+            .total-checkbox {
+              &.checked {
+                color: #000000;
+              }
+            }
+          }
+        }
+
+        .down-arrow-icon {
+          margin: -10px 0;
+          z-index: 1;
+        }
+
+        .cost-euro-box {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          align-items: center;
+          padding: 0 40px;
+          width: 90%;
+          height: 60px;
+          border: 1px solid #FFFFFF;
+          border-radius: 19px;
+          font-weight: bolder;
+
+          .cost-box-left {
+            display: flex;
+            column-gap: 20px;
+          }
+
+          ion-label {
+            color: #FFFFFF;
+            font-size: 18px;
+          }
+        }
+
+        .convert-button-div {
+          width: 100%;
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          align-items: center;
+          margin-top: 180px;
+
+          .convert-button {
+            --background: transparent linear-gradient(180deg, #ae00b3 0%, #d50087 100%) 0% 0% no-repeat padding-box;
+            --border-radius: 12px;
+            width: 133px;
+            height: 50px;
+          }
+        }
+      }
+    }
+  }
+
+  // .inner-scroll::-webkit-scrollbar {
+  //     width: 8px;
+  //     background-color: transparent;
+  //     border-radius: 16px;
+  //     // height: 90%;
+  //     // margin-right: 10px;
+  //     /* Width of the scrollbar */
+  //   }
+
+  //   .inner-scroll::-webkit-scrollbar-thumb {
+  //     background: #911741;
+  //     border-radius: 16px;
+  //     padding: 2px;
+  //   }
+
+}
+
+@media (min-width:800px) and (max-width: 1400px) {
+  .top-up-layout {
+    .top-up-card-layout {
+      .top-up-card {
+        width: 50%;
+      }
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  .top-up-layout {
+    .top-up-card-layout {
+      .top-up-card {
+        width: 90%;
+      }
+    }
+  }
+}

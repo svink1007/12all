@@ -1,0 +1,15 @@
+.select-device-alert {
+  --width: 600px;
+  --max-width: unset;
+}
+
+.mic-item,
+.cam-item {
+  &.ios {
+    --background: transparent;
+  }
+
+  ion-select {
+    flex: 1;
+  }
+}

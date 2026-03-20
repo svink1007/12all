@@ -1,0 +1,19 @@
+@import "../../shared/mixins";
+
+.country-item {
+  align-items: center;
+
+  @include fixed-label-full-width;
+
+  input {
+    cursor: pointer;
+  }
+
+  .caret-icon {
+    @include caret-icon;
+  }
+}
+
+.searchable-country-modal {
+  @include searchable-modal;
+}

@@ -1,0 +1,48 @@
+.about-page {
+  .about-card {
+    margin-bottom: 12px;
+
+    .about-content {
+      p {
+        margin: 12px 0;
+        font-size: 16px;
+      }
+
+      .get-room {
+        text-align: center;
+        font-weight: bold;
+        font-size: 20px;
+      }
+    }
+  }
+}
+
+//.layout-content::part(background), .layout-content::part(scroll) {
+//  top: 46px !important;
+//  bottom: 90px !important;
+//}
+
+.about-page {
+
+  &::part(scroll) {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .infinity-content {
+    &::part(scroll) {
+      display:grid;
+      grid-template-columns: repeat(auto-fill, 240px);
+      justify-content: space-between;
+      gap: 8px;
+      background: #1E1E1E !important;
+      align-items: start;
+      padding: 0 24px !important;
+    }
+
+    .shared-stream-item {
+      min-height: 250px;
+    }
+  }
+}
+

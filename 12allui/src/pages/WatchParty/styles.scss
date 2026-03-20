@@ -1,0 +1,16 @@
+.in-call {
+  video {
+    width: 950px;
+  }
+}
+
+.wp-share-options-modal {
+  --height: auto;
+
+  .modal-wrapper {
+    .ion-page {
+      position: relative;
+      contain: content;
+    }
+  }
+}

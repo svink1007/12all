@@ -1,0 +1,30 @@
+.top-bar-room-test {
+  --background: trasparent;
+
+  .sc-ion-buttons-md-s .button-has-icon-only.button-clear {
+    width: 52px;
+    height: 52px;
+
+    ion-icon {
+      font-size: 28px;
+    }
+  }
+
+  .room-info {
+    --background: transparent;
+
+    &::part(native) {
+      flex-direction: column;
+      justify-content: flex-end;
+    }
+
+    ion-text {
+      display: block;
+      text-align: end;
+      width: 100%;
+      font-size: 12px;
+    }
+  }
+}
+
+

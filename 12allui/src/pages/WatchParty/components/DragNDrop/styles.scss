@@ -1,0 +1,28 @@
+.dropzone-container {
+  cursor: pointer;
+
+  .dropzone {
+    padding: 80px 0;
+    border: 2px dashed var(--ion-color-medium);
+    border-radius: 4px;
+    outline: none;
+    transition: border .24s ease-in-out;
+    text-align: center;
+
+    .drop-text {
+      width: 100%;
+      text-align: center;
+      color: var(--ion-color-medium);
+      transition: color .24s ease-in-out;
+      font-size: 16px;
+    }
+
+    &.active {
+      border-color: var(--ion-color-primary);
+
+      .drop-text {
+        color: var(--ion-color-primary);
+      }
+    }
+  }
+}

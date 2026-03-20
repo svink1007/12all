@@ -1,0 +1,65 @@
+.gModalContainer {
+  background-color: rgba(0, 0, 0, 0.2);
+  width: 100vw;
+  height: 100vh;
+  z-index: 15;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  backdrop-filter: brightness(0.5);
+
+  .gModalContent {
+    width: 315px;
+    height: 150px;
+    background: white;
+    border-radius: 16px;
+    box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.04);
+    padding: 10px;
+
+    span {
+      font-size: 16px;
+      font-weight: 700;
+      color: black;
+    }
+
+    p {
+      font-size: 12px;
+      color: dimgrey;
+    }
+  }
+}
+
+.slide-up {
+  animation: slideUp 1s forwards ease-in-out;
+}
+
+.slide-down {
+  animation: slideDown 0.5s forwards ease-in-out;
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideDown {
+  from {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  to {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+}

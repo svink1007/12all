@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="34" viewBox="0 0 20 34">
+  <g id="dots_icon" data-name="dots icon" transform="translate(10391.652 22219.971)">
+    <g id="Group_30558" data-name="Group 30558" transform="translate(-10575.152 -22374.971)">
+      <rect id="Rectangle_14830" data-name="Rectangle 14830" width="20" height="34" rx="10" transform="translate(183.5 155)" fill="#d4d4d4" opacity="0.44"/>
+      <g id="Group_30557" data-name="Group 30557" transform="translate(931 -226) rotate(90)">
+        <circle id="Ellipse_7857" data-name="Ellipse 7857" cx="2.5" cy="2.5" r="2.5" transform="translate(388 735)"/>
+        <circle id="Ellipse_7858" data-name="Ellipse 7858" cx="2.5" cy="2.5" r="2.5" transform="translate(395 735)"/>
+        <circle id="Ellipse_7859" data-name="Ellipse 7859" cx="2.5" cy="2.5" r="2.5" transform="translate(402 735)"/>
+      </g>
+    </g>
+  </g>
+</svg>

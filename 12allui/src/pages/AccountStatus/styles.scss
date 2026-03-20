@@ -1,0 +1,63 @@
+.layout-content {
+  --offset-top: 50px !important;
+}
+
+.account-status-layout {
+
+  display: flex;
+  height: 80vh;
+
+  .account-status-container {
+    .acount-status-header {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+      align-items: center;
+      width: 100%;
+
+      // .account-status-left {
+      //   display: flex;
+      //   justify-content: center;
+      //   // width: calc(100%-5px);
+      //   width: 100%;
+
+      // }
+
+      ion-header {
+        display: flex;
+        justify-content: center;
+        width: 30%;
+        // ion-title {
+        //   display: flex;
+        //   flex-direction: row;
+        //   justify-content: center;
+        //   align-items: center;
+        //   width: calc(100% + 500px);
+        // }
+      }
+
+      .star-balance-box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 25px;
+
+        // .account-current-balance-box {
+        //   display: flex;
+        //   justify-content: center !important;
+        //   align-items: center !important;
+        // }
+      }
+    }
+
+    .main-container {
+      display: flex;
+      flex-direction: row;
+      gap: 20px;
+      padding: 0 25px 0 25px;
+      margin-top: 30px;
+      // height: 80vh;
+    }
+
+  }
+}

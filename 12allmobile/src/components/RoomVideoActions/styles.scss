@@ -1,0 +1,32 @@
+ion-buttons.room-video-actions {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  border-radius: 4px;
+
+  ion-button {
+    &.button-has-icon-only.button-clear {
+      margin-bottom: 2px;
+      $size: 40px;
+      width: $size;
+      height: $size;
+    }
+
+    &::part(native) {
+      background-color: rgba(51, 51, 51, 0.15);
+      padding: 8px;
+    }
+  }
+
+  @media (orientation: landscape) {
+    &.sc-ion-buttons-ios-h {
+      padding-inline-end: var(--ion-safe-area-right);
+
+      &.chat-is-open {
+        bottom: 80px;
+      }
+    }
+  }
+}

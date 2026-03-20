@@ -1,0 +1,73 @@
+@import "src/shared/mixins";
+
+.share-options-item.item {
+  --padding-start: 0;
+  flex: 1;
+
+  ion-icon {
+    &.select-share-icon {
+      margin-inline-start: 16px;
+      margin-inline-end: 32px;
+    }
+
+
+    &.select-caret-icon {
+      @include caret-icon;
+      margin-inline-start: 4px;
+    }
+
+    &.hls-icon,
+    &.rp-icon {
+      margin: 0 32px 0 20px;
+    }
+  }
+
+  ion-img {
+    width: 22px;
+    margin-inline-start: 20px;
+    margin-inline-end: 32px;
+
+    &.ios {
+      margin-inline-start: 24px;
+      margin-inline-end: 20px;
+    }
+  }
+}
+
+.wp-share-options-popover {
+  --min-width: 340px;
+
+ ion-item.option-wrapper {
+   --padding-start: 0;
+   --inner-padding-end: 0;
+
+   ion-item.option {
+     --background: trasparent;
+     flex: 1;
+   }
+ }
+
+  ion-img {
+    width: 22px;
+  }
+
+  .tip-buttons {
+    margin-inline-start: 0;
+  }
+}
+
+.share-options-warning-message {
+  font-size: 14px;
+}
+
+.share-options-warning-message-no-support {
+  font-size: 14px;
+  display: block;
+  padding-inline-start: 16px;
+  margin-top: 8px;
+}
+
+.share-audio-message {
+  display: block;
+  padding: 4px 20px 12px;
+}

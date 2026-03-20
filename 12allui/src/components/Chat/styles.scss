@@ -1,0 +1,266 @@
+.theatre {
+  .chat-card .chat-card-content .chat-item-input::part(native) {
+    width: 300px;
+  }
+}
+
+.chat-card {
+  .chat-header{
+    background: #2D2D2D 0% 0% no-repeat padding-box;
+    padding-left: 20px;
+    //height: 32px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    div{
+      display: flex;
+      align-items: center;
+      &:nth-child(2){
+        ion-button{
+          color: white;
+          padding: 0px;
+          ion-icon{
+            font-size: 20px;
+          }
+        }
+        
+      }
+    }
+    ion-text{
+      font-size: 12px !important;
+    }
+    ion-icon{
+      font-size: 20px;
+    }
+  }
+ 
+
+
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  padding: 4px 0px 4px 0;
+  margin: 0;
+  box-shadow: none;
+
+  .chat-card-content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgba(79, 79, 79, 0.5);
+    .messages-container {
+      height: 100%;
+      overflow-y: auto;
+      scrollbar-color: var(--ion-color-secondary) transparent;
+      scrollbar-width: thin;
+
+      &::-webkit-scrollbar {
+        width: 4px;
+      }
+
+      &::-webkit-scrollbar-track {
+        background: transparent;
+      }
+
+      &::-webkit-scrollbar-thumb {
+        background: var(--ion-color-secondary);
+      }
+
+      .chat-message {
+        margin: 8px 8px 8px 20px;
+        background: transparent;
+        box-shadow: none;
+        ion-avatar{
+          width: 24px;
+          height: 24px;
+        }
+        ion-card-content {
+          padding: 4px 8px;
+          background-color: transparent;
+          display: inline-block;
+          width: 100%;
+
+          ion-card-header {
+            display: flex;
+            align-items: center;
+            padding: 0;
+            justify-content: space-between;
+
+            .chat-participant-name {
+              font-weight: bold;
+            }
+
+            .chat-date {
+              padding-inline-start: 32px;
+              font-size: 11px;
+            }
+          }
+        }
+      }
+
+      @media (max-width: 1084px) {
+        max-height: 300px;
+      }
+    }
+
+    .chat-item-input {
+      margin: 0px 4px 12px 20px;
+      display: flex;
+      align-items: center;
+      background: rgba(245, 245, 245,0.89)!important;
+      border-radius: 22px;
+      padding: 0px;
+
+      &::part(native) {
+        height: 37px;
+      }
+      ion-icon{
+        font-size: 24px;
+      }
+      ion-input {
+        --padding-start: 16px;
+        --padding-end: 16px;
+        --placeholder-color: black;
+        --highlight-color-focused: black;
+        --color:black;
+        --background: transparent;
+        font-size: 14px;
+        &::placeholder{
+          color: black;
+        }
+      }
+
+      .chat-name-left {
+        
+        padding: 0 8px;
+        display: flex;
+        color: grey;
+        font-style: italic;
+
+        .left {
+          margin-inline-start: 4px;
+        }
+      }
+
+      ion-buttons {
+        margin: 0;
+        ion-button {
+          ion-avatar {
+            margin: 0;
+            $dim: auto;
+            width: $dim;
+            height: $dim;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: transparent linear-gradient(180deg, #AE00B3 0%, #D50087 100%) 0 0 no-repeat padding-box !important;
+            ion-icon {
+              font-size: 24px;
+              padding: 8px;
+            }
+
+            ion-text {
+              $dim: 32px;
+              width: $dim;
+              height: $dim;
+              line-height: $dim;
+              font-size: 14px;
+            }
+          }
+
+          .chat-unread-all-badge {
+            position: absolute;
+            top: -6px;
+            right: -6px;
+
+            animation: fadein .3s ease 0s normal forwards;
+
+            @keyframes fadein {
+              0% {
+                opacity: 0;
+              }
+              100% {
+                opacity: 1;
+              }
+            }
+          }
+        }
+      }
+
+      ion-icon {
+        font-size: 20px;
+      }
+    }
+
+    .bets-game {
+      background-color: #662C4B;
+      border-radius: 3px;
+      padding: 5px 8px;
+      font-size: 12px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      span {
+        font-weight: bold;
+      }
+    }
+    
+    .join-game-button {
+      text-align: center;
+    }
+
+    .bets-add-game {
+      --background: none;
+      --box-shadow: none;
+      margin-bottom: 0;
+      
+      ion-img {
+        width: 33px;
+      }
+    }
+  }
+}
+
+.chat-popover {
+  --max-height: 300px;
+
+  ion-list {
+    ion-list-header {
+      font-weight: bold;
+    }
+
+    ion-item {
+      &::part(native) {
+        font-size: 14px;
+        min-height: unset;
+      }
+    }
+  }
+
+  ion-avatar {
+    background: var(--ion-color-secondary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-inline-end: 12px;
+    text-transform: uppercase;
+
+    $dim: 26px;
+    width: $dim;
+    height: $dim;
+
+    ion-text {
+      font-size: 12px;
+    }
+
+    ion-icon {
+      font-size: 14px;
+    }
+  }
+}

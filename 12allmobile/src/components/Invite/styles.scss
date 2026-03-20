@@ -1,0 +1,24 @@
+@import "../../shared/mixins";
+
+.wp-invite-modal {
+  @include modal-auto-height;
+
+  --width: 380px;
+
+  ion-card-content {
+    text-align: center;
+
+    ion-text {
+      display: block;
+      text-align: center;
+    }
+
+    ion-button.invite-all {
+      ion-spinner {
+        width: 12px;
+        height: 12px;
+        margin-inline-end: 4px;
+      }
+    }
+  }
+}

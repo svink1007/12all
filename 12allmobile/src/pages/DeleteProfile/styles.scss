@@ -1,0 +1,83 @@
+.delete-profile-container {
+  position: relative;
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-top: 16px;
+  height: 100%;
+
+  .delete-profile-header {
+    .delete-profile-close {
+      position: absolute;
+      width: 18px;
+      height: 18px;
+      top: var(--ion-safe-area-top, 32px);
+      left: 32px;
+    }
+
+    &-title {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      text-align: center;
+      font-size: 16px;
+
+      p {
+        margin: 0px;
+        margin: 0px;
+      }
+
+      .delete-profile-header-meeting-link {
+        font-size: 12px;
+        text-align: center;
+        color: #1a73e8;
+      }
+    }
+  }
+
+  .delete-profile-body {
+    height: calc(100% - 100px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 64px;
+
+    &-text {
+      text-align: center;
+      font-size: 18px;
+      line-height: 33px;
+      letter-spacing: -0.36px;
+      color: #ffffff;
+      text-transform: uppercase;
+      margin: 0px;
+    }
+
+    .delete-profile-button-group {
+      width: 100%;
+      margin-left: 64px;
+      margin-right: 64px;
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+
+      .delete-profile-button {
+        border: 1px solid #f9f9f9;
+        border-radius: 12px;
+        background-color: transparent;
+        border-radius: 12px;
+        padding: 9px 54px 9px 54px;
+        font-size: 18px;
+        line-height: 21px;
+        color: #ffffff;
+        text-transform: uppercase;
+      }
+
+      .delete-profile-button:hover {
+        background: transparent
+          linear-gradient(180deg, #ae00b3 0%, #d50087 100%) 0% 0% no-repeat
+          padding-box;
+        border: 1px solid transparent;
+      }
+    }
+  }
+}

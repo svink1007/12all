@@ -1,0 +1,36 @@
+.right-account-status-container {
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+  margin-top: 8px;
+  // height: 80vh;
+  // margin: 40px !important;
+
+  // ion-content {
+  // }
+  .right-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    // align-items: center;
+    background: transparent linear-gradient(2deg, #502B3F 0%, #662C4B 100%) 0% 0% no-repeat padding-box;
+    width: 100%;
+    padding: 15px 0 0 30px;
+    // --padding: 0px 20px 0 20px !important;
+    // height: 100%;
+    
+    ion-title {
+      display: flex;
+      flex: 0;
+      justify-content: flex-start;
+      align-items: center;
+    }
+    
+    
+  }
+  
+  .billing-history-active {
+    overflow-y: scroll;
+  }
+
+}

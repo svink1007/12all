@@ -1,0 +1,20 @@
+.input-field {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  // gap: 10px;
+  width: 100%;
+
+  ion-label {
+    color: #A5A5A5;
+    padding-left: 10px;
+  }
+
+  ion-input {
+    background: white;
+    color: black;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    width: 90%;
+  }
+}

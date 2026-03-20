@@ -1,0 +1,28 @@
+.stream-debug {
+  overflow: auto;
+
+  h1 {
+    font-size: 20px;
+    border-bottom: 2px solid var(--ion-color-primary);
+    padding: 12px 16px;
+    margin-bottom: 20px;
+  }
+
+  video {
+    width: 100%;
+    height: 100%;
+  }
+
+  .hls-errors-list {
+    max-height: 300px;
+    overflow: auto;
+
+    ion-list-header {
+      padding: 0;
+    }
+
+    ion-text {
+      display: block;
+    }
+  }
+}

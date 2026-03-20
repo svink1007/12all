@@ -1,0 +1,14 @@
+.home-swiper {
+  padding: 40px;
+
+  .swiper-wrapper {
+    .swiper-slide {
+      text-align: center;
+    }
+  }
+
+  .swiper-button-prev,
+  .swiper-button-next {
+    color: white;
+  }
+}

@@ -1,0 +1,92 @@
+:root{
+  --bt-channel-background: #502B3F;
+}
+.layout-content::part(background), .layout-content::part(scroll) {
+  overflow: hidden !important;
+}
+
+button:focus-visible {
+  outline: none !important;
+}
+
+.channels-page {
+  --offset-top: 30px !important;
+}
+
+.about-page {
+
+  --offset-top: 30px !important;
+
+  .scroll-y {
+    overflow-y: hidden !important;
+    overscroll-behavior-y: contain;
+  }
+
+  .inner-scroll, .scroll-y, main {
+    overflow-y: hidden !important;
+  }
+
+  .about-card {
+    margin-bottom: 12px;
+
+    .about-content {
+      p {
+        margin: 12px 0;
+        font-size: 16px;
+      }
+
+      .get-room {
+        text-align: center;
+        font-weight: bold;
+        font-size: 20px;
+      }
+    }
+  }
+}
+
+.truncate {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+
+//.list-md {
+//  margin-top: 0.75rem !important;
+//}
+
+.vod-table {
+  th {
+    font-weight: normal !important;
+    height: 60px !important;
+    text-align: left !important;
+  }
+  td {
+    height: 90px !important;
+    text-align: left !important;
+  }
+}
+
+textarea, input, .native-textarea {
+  border-radius: 8px !important;
+}
+
+.vod-button {
+  button {
+    border-radius: 12px;
+    background: transparent linear-gradient(180deg, #AE00B3 0%, #D50087 100%) 0 0 no-repeat padding-box !important;
+  }
+}
+
+//ion-popover {
+//  z-index: 10001 !important; /* Make sure it’s higher than the dialog */
+//}
+
+.modal-custom {
+  --width: 90vw;
+  --max-width: 1200px;
+  --height: 87vh;
+  .item-native {
+    padding-left: 0 !important;
+  }
+}

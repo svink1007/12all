@@ -1,0 +1,62 @@
+.account-balance-status {
+
+  margin-bottom: 30px;
+
+  .account-current-balance-box-2 {
+    display: flex;
+    width: 100%;
+    margin: 20px 0 0 20px;
+
+    .account-bal-box-component {
+      background: #191919;
+      border-radius: 8px;
+    }
+  }
+
+  .converter {
+    margin: 30px 0 0 20px;
+    display: flex;
+    flex-direction: column;
+    
+    ion-label {
+      color: #A5A5A5;
+    }
+    
+    .current-rate {
+      margin-top: 10px;
+    }
+
+    .line {
+      display: flex;
+      justify-content: flex-start;
+      width: 40%;
+      margin: 10px 0 30px 0;
+      .horizontal-row {
+        display: flex;
+        background-color: #989595;
+        margin-top: 30px;
+        width: 100%;
+      }
+    }
+
+    .stars-cost {
+      display: flex;
+      justify-content: flex-start;
+      gap: 80px;
+
+      .add-button {
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        // margin-bottom: 8px;
+
+        ion-button {
+          --background: transparent linear-gradient(180deg, #AE00B3 0%, #D50087 100%) 0% 0% no-repeat padding-box;
+          --border-radius: 12px;
+          width: 100px;
+        }
+      }
+    }
+  }
+
+}

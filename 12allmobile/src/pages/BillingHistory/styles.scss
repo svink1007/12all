@@ -1,0 +1,171 @@
+.history-container {
+  position: relative;
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-top: 16px;
+  height: 100%;
+
+  .history-header {
+    .history-close {
+      position: absolute;
+      width: 18px;
+      height: 18px;
+      top: var(--ion-safe-area-top, 32px);
+      left: 32px;
+    }
+
+    &-title {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      text-align: center;
+      font-size: 16px;
+
+      p {
+        margin: 0px;
+        margin: 0px;
+      }
+
+      .history-header-meeting-link {
+        font-size: 12px;
+        text-align: center;
+        color: #1a73e8;
+      }
+    }
+  }
+
+  .billing-history-container {
+    display: flex;
+    justify-content: center;
+
+    .billing-history-body {
+      width: fit-content;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 9px 12px;
+      border: 1px solid #ffffff;
+      border-radius: 8px;
+      background-color: #191919;
+    }
+
+    p {
+      margin: 0px;
+    }
+
+    .balance-text {
+      font-size: 14px;
+      letter-spacing: -0.28px;
+      color: #bebebe;
+      margin-right: 8px;
+    }
+
+    .star-avatar {
+      width: 24px;
+      height: 24px;
+    }
+
+    .billing-history {
+      margin-left: 8px;
+
+      p {
+        font-size: 14px;
+        letter-spacing: -0.28px;
+        color: #ffffff;
+      }
+    }
+  }
+
+  .billing-history-body {
+    margin-top: 24px;
+
+    ion-item-divider {
+      min-height: 1px;
+    }
+
+    .transaction-row {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+    .billing-history-header {
+      margin-top: 18px;
+      margin-bottom: 18px;
+      font-size: 18px;
+      letter-spacing: -0.04px;
+      color: #ffffff;
+      text-align: center;
+    }
+    .transaction-data-container {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      align-items: center;
+    }
+    .transaction-stars-container {
+      display: flex;
+      gap: 20px;
+      min-width: 80px;
+      justify-content: space-between;
+
+      .transaction-stars {
+        min-width: 32px;
+      }
+    }
+    .transaction-item-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .transaction-item-divider {
+      height: 1px;
+      min-height: 1px;
+    }
+
+    .transaction-date {
+      font-size: 14px;
+      letter-spacing: -0.03px;
+      color: #a7a7a7;
+    }
+
+    .transaction-type {
+      text-align: left;
+      font-size: 16px;
+      letter-spacing: -0.03px;
+    }
+
+    .history-list-header-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 8px;
+
+      .transaction-header-1 {
+        display: flex;
+        gap: 28px;
+        font-size: 16px;
+        color: #d4d4d4;
+        letter-spacing: -0.03px;
+        align-items: center;
+        p {
+          margin: 0px;
+        }
+      }
+
+      .transaction-header-2 {
+        display: flex;
+        gap: 28px;
+        font-size: 16px;
+        color: #d4d4d4;
+        letter-spacing: -0.03px;
+        align-items: center;
+        p {
+          margin: 0px;
+        }
+      }
+    }
+  }
+}

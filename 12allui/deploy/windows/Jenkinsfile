@@ -1,0 +1,64 @@
+pipeline {
+    agent any
+
+    environment {
+        IMAGE_NAME = 'your-docker-image-name' // Replace with your desired image name
+        DOCKER_CREDENTIALS_ID = 'docker-credentials-id' // Replace with your Docker Hub credentials ID
+    }
+
+    stages {
+        stage('Checkout') {
+            steps {
+                // Checkout the source code from your repository
+                git 'https://your-repo-url.git' // Replace with your repo URL
+            }
+        }
+
+        stage('Build Docker Image') {
+            steps {
+                script {
+                    // Build the Docker image
+                    sh "docker build -t ${IMAGE_NAME} ."
+                }
+            }
+        }
+
+        stage('Run Tests') {
+            steps {
+                script {
+                    // Run tests inside the Docker container
+                    sh "docker run --rm ${IMAGE_NAME} npm test"
+                }
+            }
+        }
+
+        stage('Push to Docker Hub') {
+            steps {
+                script {
+                    // Log in to Docker Hub
+                    withDockerRegistry([credentialsId: DOCKER_CREDENTIALS_ID, url: 'https://index.docker.io/v1/']) {
+                        // Push the Docker image to Docker Hub
+                        sh "docker push ${IMAGE_NAME}"
+                    }
+                }
+            }
+        }
+
+        stage('Deploy') {
+            steps {
+                script {
+                    // Add your deployment commands here
+                    // For example, you might use Docker Compose to deploy your app
+                    sh "docker-compose up -d"
+                }
+            }
+        }
+    }
+
+    post {
+        always {
+            // Clean up
+            sh "docker rmi ${IMAGE_NAME} || true" // Remove the image after build to save space
+        }
+    }
+}

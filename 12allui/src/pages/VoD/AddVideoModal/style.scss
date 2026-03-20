@@ -1,0 +1,24 @@
+.vod-button {
+  button {
+    border-radius: 12px;
+    background: transparent linear-gradient(180deg, #AE00B3 0%, #D50087 100%) 0 0 no-repeat padding-box !important;
+  }
+}
+
+
+//ion-popover {
+//  z-index: 10001 !important; /* Make sure it’s higher than the dialog */
+//}
+
+button:focus-visible {
+  outline: none !important;
+}
+.modal-custom {
+  --width: 90vw;
+  --max-width: 1200px;
+  --height: 87vh;
+
+  .item-native {
+    padding-left: 0 !important;
+  }
+}

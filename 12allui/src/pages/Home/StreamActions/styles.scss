@@ -1,0 +1,10 @@
+.stream-actions-buttons {
+  justify-content: center;
+  overflow: auto;
+  flex-wrap: wrap;
+
+  ion-button {
+    --background: transparent;
+    --box-shadow: none;
+  }
+}

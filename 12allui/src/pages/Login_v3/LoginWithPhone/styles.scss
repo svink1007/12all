@@ -1,0 +1,10 @@
+.login-with-phone-container {
+  ion-item {
+    --background: transparent !important;
+
+    ion-radio {
+      --background-checked: transparent !important;
+      --background: transparent !important;
+    }
+  }
+}

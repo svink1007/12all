@@ -1,0 +1,155 @@
+ion-backdrop {
+  --background: none;
+}
+
+.premium-package-modal {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  width: 35%;
+  background: #662C4B;
+  border-radius: 12px;
+  --border-radius: 12px;
+  --backdrop-opacity: 0.8;
+  // --height: 45%;
+  // aspect-ratio: 1/1;
+  // padding-top: 200px;
+  // margin-bottom: 20px;
+
+  .cross-button {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    padding: 10px 10px 0 0;
+
+    :hover {
+      cursor: pointer;
+    }
+  }
+
+  .premium-viewer-pay-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    // margin-top: 20px;
+
+    .sharp-star {
+      width: 30px;
+      height: 30px;
+      margin-top: 20px;
+    }
+
+    ion-title {
+      // display: flex;
+      margin-top: 20px;
+      font-weight: bold;
+    }
+
+    .description {
+      margin-top: 10px;
+    }
+
+    .tenure {
+      margin-top: 10px;
+      font-size: 14px;
+    }
+  }
+
+  .subscription-details {
+    display: flex;
+    justify-content: center;
+    // background: #1E1E1E;
+    width: 100%;
+    margin-top: 20px;
+    border-radius: 12px;
+    height: 90px;
+
+    ion-radio-group {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: space-between;
+      margin-bottom: 40px;
+
+      .radio-button {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+
+        ion-label,
+        ion-img {
+          margin-top: 0;
+          margin-left: 20px;
+        }
+
+        // ion-radio {
+        //   .radio-icon {
+        //     border-color: none !important;
+        //   }
+        // }
+      }
+    }
+
+    .star-amount-details {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+
+
+      .star-amount-label {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 12px;
+        font-weight: bold;
+
+        ion-img {
+          width: 20px;
+        }
+
+        ion-label {
+          margin-top: 0px;
+          margin-left: 10px;
+        }
+      }
+    }
+  }
+
+  .total-amount {
+    font-size: 13px;
+    color: #CFCFCF;
+  }
+
+  .horizontal-row {
+    background-color: #989595;
+    margin-top: 30px;
+    width: 80%;
+  }
+
+  .pay-button {
+    --background: transparent linear-gradient(180deg, #ae00b3 0%, #d50087 100%) 0% 0% no-repeat padding-box;
+    --border-radius: 12px;
+    width: 133px;
+    margin: 30px 0 30px 0;
+  }
+
+  .modal-wrapper {
+    height: 200px !important;
+    // background: transparent !important;
+  }
+
+  .modal-shadow {
+    height: 200px !important;
+    // background: transparent !important;
+  }
+}
+
+@media (min-width:800px) and (max-width: 1400px) {}
+
+@media (max-width: 800px) {}

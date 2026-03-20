@@ -1,0 +1,200 @@
+@import "../../shared/mixins";
+
+.user-lr-page {
+  &.keyboard-is-open {
+    ion-content {
+      .content-holder {
+        .interactions-holder {
+          .stream-side-bar {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+
+  ion-header,
+  ion-content .controls {
+    ion-button {
+      &::part(native) {
+        width: auto;
+        height: auto;
+      }
+
+      ion-icon {
+        font-size: 26px;
+      }
+
+      &.chat-btn {
+        --padding-top: 12px;
+        height: auto;
+      }
+    }
+  }
+
+  ion-content {
+    &::part(scroll) {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .content-holder {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      width: 100%;
+      height: 100%;
+      overflow: auto;
+
+      &.controllers-hidden {
+        justify-content: center;
+      }
+
+      .video-holder {
+        display: flex;
+        width: 100%;
+        overflow: auto;
+        position: relative;
+
+        video {
+          z-index: 0;
+          width: 100%;
+          height: 100%;
+        }
+
+        .channel-logo-name-container {
+          position: absolute;
+          top: 0;
+          padding: 8px;
+
+          ion-img {
+            width: 48px;
+          }
+        }
+      }
+
+      .interactions-holder {
+        width: 100%;
+        display: flex;
+        align-items: flex-end;
+
+        overflow: auto;
+
+        &.chat-is-open {
+          flex: 1;
+        }
+      }
+    }
+
+    .emojis-holder {
+      @include emoji;
+    }
+  }
+
+  @media (orientation: landscape) {
+    &.fullscreen {
+      ion-content {
+        .content-holder {
+          .video-holder {
+            .channel-logo-name-container {
+              position: absolute;
+              top: 48px;
+            }
+          }
+        }
+      }
+    }
+
+    &.keyboard-is-open {
+      &.chat-is-open {
+        .video-holder {
+          .channel-logo-name-container {
+            top: 0;
+          }
+        }
+      }
+
+      ion-header {
+        display: none;
+      }
+
+      ion-content {
+        .content-holder {
+          .room-meta {
+            display: none;
+          }
+
+          .video-holder {
+            .room-video-actions {
+              display: none;
+            }
+          }
+
+          .channel-logo-name-container {
+            display: none;
+          }
+
+          .interactions-holder {
+            height: 100%;
+          }
+        }
+      }
+    }
+
+    ion-content {
+      $emoji-height: 150px;
+
+      .content-holder {
+        &.controllers-hidden {
+          .video-holder {
+            .channel-logo-name-container {
+              top: 0;
+            }
+          }
+        }
+
+        .interactions-holder {
+          position: fixed;
+          bottom: 0;
+          height: calc(100% - 60px);
+
+          &.emojis-are-open {
+            bottom: $emoji-height;
+          }
+        }
+      }
+
+      .emojis-holder .emoji-mart {
+        height: auto;
+        max-height: $emoji-height;
+      }
+    }
+  }
+}
+
+.wp-user-loading-modal {
+  --background: transparent;
+
+  #ion-react-wrapper {
+    justify-content: center;
+
+    ion-card {
+      margin: 0 auto;
+      width: 160px;
+
+      ion-card-content {
+        text-align: center;
+        padding: 20px;
+
+        ion-text {
+          display: block;
+        }
+      }
+    }
+
+    .cancel-loading {
+      margin-top: 20px;
+      justify-content: center;
+    }
+  }
+}

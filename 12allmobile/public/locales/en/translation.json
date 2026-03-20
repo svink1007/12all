@@ -1,0 +1,593 @@
+{
+  "nav": {
+    "home": "HOME",
+    "about": "ABOUT",
+    "shop": "SHOP",
+    "login": "LOGIN",
+    "downloads": "DOWNLOADS",
+    "news": "NEWS",
+    "support": "SUPPORT",
+    "contact": "CONTACT US",
+    "notifications": "NOTIFICATIONS",
+    "welcome": "Welcome",
+    "logout": "LOGOUT",
+    "watchParty": "WATCH PARTY"
+  },
+  "home": {
+    "hotNow": "HOT NOW",
+    "livingRooms": "LIVING ROOMS",
+    "coming": "Coming soon",
+    "selection": "SELECTION"
+  },
+  "downloads": {
+    "header": "DOWNLOADS"
+  },
+  "contactUs": {
+    "header": "CONTACT US",
+    "email": "Email",
+    "subject": "Subject",
+    "message": "Message",
+    "send": "Send",
+    "email-required": "Email is required"
+  },
+  "signup": {
+    "header": "SIGN UP",
+    "country": "Country",
+    "countryCode": "Country code",
+    "phoneNumber": "Phone number",
+    "email": "Email",
+    "invalidEmail": "Enter valid email",
+    "password": "Password",
+    "showPassword": "Show password",
+    "nickname": "Nickname",
+    "nickname*": "Nickname *",
+    "nicknamePlaceholder": "Enter your nickname",
+    "submit": "Submit",
+    "success": "Your are successfully registered!",
+    "agreement": "I agree with <1>terms</1> and <3>privacy</3>",
+    "enterValidPhoneNumber": "Enter valid phone number",
+    "phoneNumberPlaceholder": "Enter your phone number"
+  },
+  "login": {
+    "country": "",
+    "countryCode": "Country code",
+    "phoneNumber": "Phone number",
+    "header": "Please, enter your phone number and nickname.",
+    "next": "Next",
+    "cancel": "Cancel",
+    "ok": "OK",
+    "receiveCodeVia": "Receive verification code via",
+    "sms": "SMS",
+    "call": "Call",
+    "skip": "Skip"
+  },
+  "skipLogin" : {
+    "title": "SKIP LOGIN",
+    "enterANickname": "Enter a nickname",
+    "nicknameTaken": "This nickname is already taken. Please choose another one.",
+    "noTokenFound": "No skip login token found. Please try again.",
+    "errorOccurred": "An error occurred. Please try again."
+  },
+  "sendCode": {
+    "header": "We would like to verify your phone number. Depending on your choice, we will send you a message or give you a call with a verification code."
+  },
+  "code": {
+    "verify": "Verify",
+    "back": "Go back",
+    "verificationCodeSend": "Verification code will be sent to",
+    "receiveCallWithVerificationCode": "You will receive a call with \n a verification code on",
+    "enterVerificationCode": "Enter 4 digits verification code",
+    "invalidCode": "Invalid verification code",
+    "forgotPassword": "Please check your email",
+    "send": "Send verification code",
+    "call": "Ask to call",
+    "enterItBellow": "Enter the code bellow:"
+  },
+  "footer": {
+    "privacy": "Privacy policy",
+    "terms": "Terms and conditions",
+    "copyright": "Copyright © 12all.tv. All rights reserved. 2020"
+  },
+  "privacy": {
+    "header": "Privacy policy",
+    "close": "Close"
+  },
+  "terms": {
+    "header": "Terms and conditions",
+    "close": "Close"
+  },
+  "watchPartyLogo": {
+    "header": "Channel logo",
+    "drop": "Drop here or click to select an image",
+    "dropNewImage": "Drop here or click to select a new image"
+  },
+  "watchPartyShareOptions": {
+    "stream": "My stream",
+    "noSupport": "Sharing my stream and video, audio and torrent files are not supported by this browser",
+    "file": "Video/audio file",
+    "torrent": "Torrent",
+    "channel": "Select channel",
+    "camera": "Share my camera",
+    "screen": "Share my screen",
+    "card": "Share from media card"
+  },
+  "watchPartyMyStream": {
+    "header": "My stream",
+    "preview": "Preview",
+    "streamUrl": "Enter stream URL",
+    "validate": "Validate"
+  },
+  "watchPartyFile": {
+    "header": "Video/audio share",
+    "drop": "Drop here or click to select a video or audio file",
+    "dropNew": "Drop here or click to select a new video or audio file",
+    "preview": "Preview",
+    "addDifferentFile": "Add a different file"
+  },
+  "userMediaSettings": {
+    "header": "Camera and microphone settings",
+    "userViewHeader": "Select camera and microphone",
+    "micPlaceholder": "Select microphone",
+    "camPlaceholder": "Select camera",
+    "loading": "Loading..."
+  },
+  "joinScreen": {
+    "nickname": "Nickname",
+    "typeNickname": "Type your nickname",
+    "roomId": "Room ID",
+    "typeRoomId": "Type room ID",
+    "join": "Join",
+    "cancel": "Cancel",
+    "roomNotActive": "Room is not active",
+    "noRoom": "Room does not exist",
+    "roomError": "Cannot access the room"
+  },
+  "livingRoom": {
+    "wait": "Please wait...",
+    "cancel": "Cancel",
+    "camError": "Your camera is used by other device"
+  },
+  "userLivingRoom": {
+    "decline": "Decline",
+    "ok": "OK",
+    "unmuteMic": "This host is asking you to unmute your microphone",
+    "startCam": "This host is asking you to start your camera",
+    "loading": "Loading...",
+    "cancel": "Cancel",
+    "unexpected": "Unexpected error",
+    "noFsUrl": "Unexpected config error",
+    "failToConnectToWs": "Fail to connect",
+    "blockedToEnterRoom": "You have been blocked from entering into this room",
+    "youHaveBeenRemoved": "You have been removed from the room"
+  },
+  "streamValidation": {
+    "supportedFormats": "Supported formats",
+    "validating": "Validating stream",
+    "valid": "The stream is valid",
+    "invalid": "The stream could not be verified, either because the server or network failed, or because the format is not supported"
+  },
+  "chat": {
+    "header": "Chat",
+    "placeholder": "Chat",
+    "everyone": "Everyone",
+    "chatWith": "Chat with:",
+    "left": "left"
+  },
+  "participants": {
+    "header": "Participants",
+    "askToUnmute": "Ask to unmute microphone",
+    "mute": "Mute microphone",
+    "askToStartCam": "Ask to start camera",
+    "stopCam": "Stop camera",
+    "remove": "Remove",
+    "muteAll": "Mute all",
+    "noParticipants": "No participants"
+  },
+  "search": {
+    "favorites": "Favorites",
+    "users": "Users",
+    "rooms": "Rooms",
+    "channels": "Channels",
+    "language": "Language",
+    "country": "Country",
+    "countries": "Countries",
+    "recentSearches": "Recent Searches",
+    "genre": "Genre",
+    "type": "Type",
+    "owner": "Owner"
+  },
+  "channels": {
+    "rooms": "ROOMS",
+    "tv": "TV",
+    "sharedSites": "SITES",
+    "favorites": "FAVORITES",
+    "filter": "Filter",
+    "language": "Language",
+    "origin": "Origin",
+    "notFound": "Channel not found",
+    "error": "Channel error"
+  },
+  "filter": {
+    "genre": "Genre",
+    "language": "Language",
+    "origin": "Origin",
+    "showSelected": "Show selected",
+    "clear": "Clear selected",
+    "dismiss": "Dismiss",
+    "ok": "OK",
+    "clearAllFilters": "Clear all filters"
+  },
+  "channelInfo": {
+    "header": "Channel info",
+    "language": "Language",
+    "country": "Country of origin",
+    "genre": "Genre",
+    "description": "Description",
+    "na": "N/A",
+    "ok": "OK",
+    "inApprovalProcess": "In approval process"
+  },
+  "layout": {
+    "menu": "Menu",
+    "joinSharedStream": "Join shared stream",
+    "joinLivingRoom": "Join living room",
+    "profile": "Profile",
+    "terms": "Terms of use",
+    "privacy": "Privacy policy",
+    "about": "About",
+    "logout": "Logout",
+    "login": "Login",
+    "codeWillBeSentTo": "The verification code will be sent to",
+    "premium": "Premium",
+    "contacts":"Contacts"
+  },
+  "profile": {
+    "firstname": "First Name",
+    "lastname": "Last Name",
+    "avatar": "Add Image",
+    "nickname": "Nickname",
+    "country": "Nationality",
+    "language": "Preferred Channel Language",
+    "gender": "Gender",
+    "man": "Man",
+    "woman": "Woman",
+    "other": "Other",
+    "genres": "Preferred genres",
+    "authFail": "Authentication fail!",
+    "nokSaveProfile": "Could not save the changes",
+    "over18": "I confirm that I am over 18 years old",
+    "condition": "terms and conditions",
+    "typeNickname": "Type your nickname",
+    "selectCountry": "Select your country of residence",
+    "selectLanguage": "Select your mother language",
+    "nicknameRequired": "Nickname is required",
+    "phoneNumberRequired": "Phone Number is required",
+    "isOverEighteenRequired": "You must be over 18",
+    "email": "E-mail",
+    "phoneNumber": "Phone Number",
+    "location": "Location",
+    "birthday": "Birthday",
+    "social": "Social media profiles",
+    "aboutMe": "Notice about me",
+    "deleteDesc": "The button below will delete your profile and all associated data. This operation is irreversible!",
+    "typeDeleteMyData": "Type",
+    "deleteButton": "DELETE MY DATA",
+    "account": "Account",
+    "public": "Public",
+    "private": "Private",
+    "save": "Save"
+  },
+  "invite": {
+    "header": "Share",
+    "copied": "Link copied",
+    "notifyAll": "Notify all",
+    "invitationSend": "Invitation has been send",
+    "invitationCouldNotBeSend": "Invitation could not be send"
+  },
+  "schedule": {
+    "na": "Schedule is not available"
+  },
+  "errors": {
+    "early": "Error while connecting"
+  },
+  "about": {
+    "version": "Version",
+    "contactUs": "Contact us",
+    "visitUs": "Visit us at",
+    "privacy": "Privacy",
+    "terms": "Terms and conditions",
+    "childSafety": "Child Safety"
+  },
+  "days": {
+    "mon": "Monday",
+    "tue": "Tuesday",
+    "wed": "Wednesday",
+    "thu": "Thursday",
+    "fri": "Friday",
+    "sat": "Saturday",
+    "sun": "Sunday"
+  },
+  "sharedStream": {
+    "startNewRoom": "Start new room",
+    "joinOrStartRoom": "Join a room or start a new one",
+    "room": "Room",
+    "viewers": "Viewers",
+    "ok": "OK",
+    "cancel": "Cancel",
+    "youAreHost": "You are host now",
+    "streamUrl": "Stream URL",
+    "enterStreamUrl": "Enter stream URL",
+    "join": "Join",
+    "loading": "Loading",
+    "close": "Close",
+    "leave": "Leave",
+    "firstHost": "You are the first to select the stream, and therefore you are the host.",
+    "inviteYourFriends": "Invite your friends to watch with you.",
+    "noRoom": "Cannot find free room",
+    "noModeratorRights": "You don't have moderator rights",
+    "notRoomOwner": "You are not room owner",
+    "participants": "Participants",
+    "temporaryUnavailable": "Stream is temporary unavailable",
+    "allowMic": "To be able to use the microphone, you need to give permission to it from your device settings",
+    "allowCam": "To be able to use the camera, you need to give permission to it from your device settings",
+    "noActiveRooms": "No active rooms",
+    "by": "by",
+    "cannotGetRoomData": "Cannot get room data",
+    "unexpectedErrorStart": "Unexpected error while starting",
+    "unexpectedErrorJoining": "Unexpected error while joining",
+    "unexpectedErrorInit": "Unexpected error while initializing",
+    "myCamera": "My camera",
+    "addStream": "Add stream",
+    "edit": "Edit",
+    "delete": "Delete",
+    "unexpectedErrorWhileConnectingToStream": "Unexpected error while connecting to the stream",
+    "reconnecting": "Please wait...",
+    "givePermission": "You need to give microphone and camera permission in order to continue",
+    "micProblem": "There is a microphone problem",
+    "myCameraBy": "My camera by",
+    "nowMediatedBy": "now mediated by"
+  },
+  "manageStream": {
+    "addStream": "Add stream",
+    "editStream": "Edit stream",
+    "delete": "Delete",
+    "deleteStreamConfirmation": "Are you sure you want to delete",
+    "genre": "Genre (optional)",
+    "selectGenre": "Select genre",
+    "streamName": "Stream name",
+    "enterStreamName": "Enter stream name",
+    "streamUrl": "Stream URL",
+    "enterStreamUrl": "Enter stream URL",
+    "saved": "The stream was saved",
+    "edited": "The stream was edited",
+    "deleted": "The stream was deleted",
+    "generalError": "Could not process the request. Please, try again later or contact us",
+    "urlAlreadyExists": "URL already exists",
+    "streamLogo": "Stream logo",
+    "selectStreamLogo": "Select stream logo",
+    "saving": "Saving"
+  },
+  "fs": {
+    "cannotAuthenticate":  "An error occurred while authenticating. Please contact us!"
+  },
+  "notifications": {
+    "confirmationCodeCanNotBeRequested": "Too many confirmation code requests sent via sms! Please try again to receive the code via call or try again later with sms",
+    "unexpectedErrorWhileSendingConfirmationCode": "Unexpected error while sending confirmation code",
+    "unexpectedErrorWhileTryingToCall": "Unexpected error while trying to call",
+    "cannotConnectToRoom": "Cannot connect to the room",
+    "earlyCallError": "Error while connecting early to fs",
+    "unexpectedError": "Unexpected error",
+    "invalidPhoneNumber": "Invalid phone number",
+    "couldNotAddFavorite": "Could not add as favorite",
+    "couldNotRemoveFavorite": "Could not remove the favorite",
+    "unexpectedErrorWhileLogin": "Unexpected error while login",
+    "couldNotChangeRoomStatus": "Sorry, at the moment we cannot change the room status",
+    "roomIsPrivate": "Room is now private",
+    "roomIsPublic": "Room is now public",
+    "roomClosed": "The room have been closed",
+    "roomNotActive": "Room is not active",
+    "roomHostChange": "Room host has changed to",
+    "youHaveBeenRemoved": "You have been removed from the room"
+  },
+  "common": {
+    "ok": "OK",
+    "cancel": "Cancel",
+    "add": "Add",
+    "save": "Save",
+    "okay": "Okay",
+    "dismiss": "Dismiss",
+    "none": "None",
+    "edit": "Edit",
+    "delete": "Delete",
+    "yes": "Yes",
+    "validate": "Validate",
+    "select": "Select",
+    "next": "Next"
+  },
+  "selectLanguage": {
+    "title": "Select language",
+    "language": "Language (optional)",
+    "placeholder": "Select language"
+  },
+  "selectCountry": {
+    "title": "Select country",
+    "country": "Country (optional)",
+    "placeholder": "Select country"
+  },
+  "selectGenre": {
+    "genre": "Genre (optional)",
+    "selectGenre": "Select genre"
+  },
+  "selectCountryCode": {
+    "selectCountryCode": "Select country code"
+  },
+  "selectLogo": {
+    "selectLogo": "Select logo (optional)",
+    "logo": "Logo",
+    "removeLogo": "Remove logo"
+  },
+  "selectFilter": {
+    "selectGenre": "Select genre",
+    "selectLanguage": "Select language",
+    "selectOrigin": "Select origin",
+    "selectOwner": "Select owner",
+    "selectType": "Select type",
+    "rooms": "Rooms",
+    "channels": "Channels",
+    "otherMedia": "Other Media",
+    "ok": "OK"
+  },
+  "parseLogo": {
+    "header": "Select logo",
+    "drop": "Drop here or click to select an image",
+    "dropNewImage": "Drop here or click to select a new image",
+    "selectLogo": "Select logo"
+  },
+  "cropImage": {
+    "cropImage": "Crop image"
+  },
+  "roomSideBar": {
+    "ptt": "PUSH TO TALK"
+  },
+  "vertoLayout": {
+    "changeRoomLayout": "Change room layout",
+    "videoLeftLarge": "Video on the left (large)",
+    "videoLeftSmall": "Video on the left (small)",
+    "videoCenter": "Video in the center",
+    "pip": "Picture in picture",
+    "onlyVideo": "Only video"
+  },
+  "changeStream": {
+    "title": "Change stream",
+    "favoriteStreams": "Favorite streams",
+    "streams": "Streams"
+  },
+  "roomMeta": {
+    "reconnecting": "Reconnecting"
+  },
+  "premium": {
+    "manageSubscriptions": "Manage subscriptions",
+    "subscribed": "Subscribed",
+    "premiumPackages": "Premium packages",
+    "refreshSubscriptions": "Refresh subscriptions",
+    "refresh": "Refresh",
+    "manage": "Manage",
+    "expiredNotification": "expired",
+    "cancelledNotification": "has been cancelled"
+  },
+  "contacts": {
+    "updateContacts": "Update contacts",
+    "noCommonContacts": "No common contacts",
+    "errorGettingContacts": "Could not process the request",
+    "noPermission": "You need to give contacts permission"
+  },
+  "nowPLaying": {
+    "schedule": "Schedule"
+  },
+  "sideBar": {
+    "exit": "Exit",
+    "home": "Home",
+    "settings": "Settings",
+    "store": "Store",
+    "social": "Social",
+    "stars": "Stars",
+    "premium": "Premium",
+    "login": "Login",
+    "logout": "Logout",
+    "currentBalance": "Current Balance",
+    "inviteandWin": "Invite and Win",
+    "starsStatus": "Stars Status",
+    "topup": "Top-Up",
+    "cashOut": "Cash Out"
+  },
+  "createRoom": {
+    "createARoom": "Create a Room",
+    "channels": "Channels",
+    "otherMedia": "Other Media",
+    "addDescription": "Tap to add a description",
+    "roomActiveStatus": "Your Room is active",
+    "invite": "Invite",
+    "share": "Share",
+    "schedule": "Schedule",
+    "settings": "Settings",
+    "private": "Private",
+    "public": "Public",
+    "paid": "Paid",
+    "paidAmountDesc": "stars for every new user joins",
+    "linkDescription": "Copy this link to invite anyone",
+    "roomDescription": "When you join the room, people with the link or invite will be able to see your name and profile photo and that you're in it. This may include people you're not friends with one2all.tv",
+    "endRoom": "End Room"
+  },
+  "searchInput": {
+    "favorites": "Favorites",
+    "users": "Users",
+    "rooms": "Rooms",
+    "channels": "Channels",
+    "language": "Language",
+    "countries": "Countries"
+  },
+  "settings": {
+    "settings": "Settings",
+    "privacy": "Privacy",
+    "anyOneCanJoin": "Anyone can join the One2all room",
+    "public": "PUBLIC",
+    "voice": "Voice",
+    "microphoneDisabled": "Microphones disabled",
+    "off": "OFF",
+    "soundVolume": "Sound Volume",
+    "autoTranslateChat": "Auto-translate chat",
+    "pictureOnPicture": "Picture in Picture",
+    "blurNonFriendMedia": "Blur non-friend media"
+  },
+  "users": {
+    "users": "USERS",
+    "one2all": "One2all",
+    "topUsers": "Top users",
+    "contacts": "Contacts"
+  },
+  "controlChannel": {
+    "share": "Share",
+    "favorite": "Favorite"
+  },
+  "starsTransactions": {
+    "status": "STARS STATUS",
+    "currentBalance": "Current Balance",
+    "total": "Total",
+    "stars": "stars",
+    "header": "Stars transactions",
+    "date": "Date",
+    "type": "Type"
+  },
+  "billingHistory": {
+    "history": "BILLING HISTORY",
+    "currentBalance": "Current Balance",
+    "total": "Total",
+    "stars": "stars",
+    "header": "Stars transactions",
+    "date": "Date",
+    "type": "Type",
+    "value": "Value",
+    "cost": "Cost"
+  },
+  "accountBalance": {
+    "accountBalance": "ACCOUNT BALANCE",
+    "currentBalance": "Current Balance",
+    "total": "Total",
+    "stars": "stars",
+    "manualStarTopUp": "Manual star top-up",
+    "eur": "EUR",
+    "star": "star",
+    "cost": "Cost",
+    "cashOut": "Cash Out",
+    "add": "Add",
+    "convert": "Convert"
+  },
+  "deleteProfile": {
+    "deleteAccount": "DELETE ACCOUNT",
+    "bodyText": "DO YOU WANT TO DELETE YOUR ACCOUNT DETAILS?",
+    "errorMsg": "Error occurred while deleting the user"
+  },
+  "topUp": {
+    "title": "TOP-UP"
+  }
+}

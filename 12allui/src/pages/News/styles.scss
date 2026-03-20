@@ -1,0 +1,47 @@
+.articles-page {
+
+  --offset-top: 30px !important;
+
+  ion-grid {
+    height: 100%;
+
+    .row-articles {
+      height: 100%;
+
+      .articles-col {
+        height: 100%;
+        overflow: hidden;
+
+        ion-card {
+          height: 100%;
+        }
+      }
+    }
+
+    .articles-card {
+      height: 240px;
+    }
+
+    .home-articles-card {
+      height: 150px;
+    }
+
+    .articles-image {
+      height: 100px;
+    }
+
+    .articles-card-header {
+      .home-articles-image {
+        height: 60px;
+      }
+
+      ion-card-title {
+        margin-top: 16px;
+      }
+    }
+
+    .no-padding {
+      padding: 0;
+    }
+  }
+}

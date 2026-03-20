@@ -1,0 +1,47 @@
+.stream-table {
+  border-collapse: collapse;
+  width: 100%;
+  position: relative;
+
+
+  th {
+    position: sticky;
+    top: 0;
+    background-color: var(--ion-color-tertiary);
+    z-index: 1;
+
+    &.sortable {
+      cursor: pointer;
+    }
+
+    ion-icon {
+      vertical-align: top;
+    }
+  }
+
+  th, td {
+    border-bottom: 1px solid var(--ion-color-medium);
+    padding: 8px;
+    text-align: center;
+  }
+
+  tr:nth-child(even) {
+    //background-color: #dddddd;
+  }
+
+  td {
+    &.played-successfully {
+      ion-icon {
+        font-size: 24px;
+        pointer-events: none;
+      }
+    }
+
+    &.action {
+      ion-button {
+        width: 48px;
+        height: 48px;
+      }
+    }
+  }
+}

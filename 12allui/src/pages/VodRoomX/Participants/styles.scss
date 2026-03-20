@@ -1,0 +1,135 @@
+ion-card.living-room-participants-card {
+  flex: 1;
+  min-width: 308px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: none;
+  ion-icon {
+    font-size: 22px !important;
+  }
+  ion-card-header {
+    border-bottom: 4px solid var(--ion-color-primary);
+
+    ion-card-title {
+      font-size: 14px;
+      ion-button{
+        --background-hover: rgba(107, 107, 107, 0.4);
+      }
+    }
+  }
+
+  ion-card-content {
+    width: 100%;
+    padding: 0;
+    overflow: auto;
+
+    .mute-all-item {
+      --padding-start: 0;
+      --inner-padding-end: 0;
+
+      &::part(native) {
+        background: transparent;
+      }
+    }
+
+    .no-participants {
+      font-style: italic;
+      padding: 8px 16px;
+      display: block;
+    }
+
+    .living-room-participant {
+      --min-height: 32px;
+      --padding-start: 16px;
+      --inner-padding-end: 16px;
+      --border-color:#707070 !important;
+      padding-top: 4px;
+
+      .participant-name {
+        font-size: 14px;
+        max-width: 128px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+
+        .on-app-icon {
+          margin-inline-start: 4px;
+          pointer-events: none;
+          vertical-align: middle;
+        }
+      }
+
+      ion-buttons {
+        margin-inline-start: 0;
+
+        .mic-icon,
+        .cam-icon {
+          margin-inline-end: 8px;
+        }
+
+        ion-button.button {
+          $dim: 36px;
+          height: $dim;
+          width: $dim;
+
+          ion-icon {
+            font-size: 22px ;
+
+          }
+
+          &::part(native) {
+            padding: 0;
+            height: $dim;
+            width: $dim;
+          }
+        }
+
+        ion-icon {
+          font-size: 22px ;
+        }
+      }
+    }
+    
+  }
+
+  @media (max-width: 1200px) {
+    padding-inline-end: 0;
+    margin: 0;
+  }
+}
+
+.vlr-participants-popover {
+  ion-item {
+    ion-icon {
+      color: var(--ion-color-dark);
+    }
+
+    &:hover {
+      &.report,
+      &.remove {
+        ion-icon,
+        ion-label {
+          color: var(--ion-color-warning);
+        }
+      }
+
+      &.block {
+        ion-icon,
+        ion-label {
+          color: var(--ion-color-danger);
+        }
+      }
+    }
+  }
+
+  @media (max-width: 1084px) {
+    &.not-host {
+      --offset-y: -200px;
+    }
+  }
+}
+
+@import "src/shared/mixins";
+.vlr-report-modal {
+  @include modal-auto-height;
+}

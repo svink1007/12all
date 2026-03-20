@@ -1,0 +1,76 @@
+.ion-reward-modal {
+  .password-reset-text {
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+  }
+
+  ion-button {
+    --background: transparent linear-gradient(180deg, #AE00B3 0%, #D50087 100%) 0% 0% no-repeat padding-box;
+    --border-radius: 12px;
+    width: 80px;
+    margin-top: 40px;
+  }
+}
+
+.verify-phone-number {
+display: flex;
+flex-direction: column;
+// justify-content: center;
+align-items: center;
+padding: 20px;
+width: 100%;
+// min-height: 100%;
+
+.verify-phone-content {
+  .otp-label {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  .verify-phone-input {
+    width: 100%;
+
+    ion-input {
+      width: 100%;
+    }
+  }
+
+  .g-recaptcha {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+
+  .sms-call-buttons {
+    display: flex;
+    align-items: center;
+    column-gap: 25px;
+
+    ion-button {
+      --background: #ffffff 0% 0% no-repeat padding-box;
+      --color: #E0007A;
+      --border-radius: 12px;
+    }
+  }
+}
+
+.verify-phone-buttons {
+  width: 100%;
+  .login-button-div {
+    margin-left: 0;
+  }
+  
+  .resend-button-div {
+    ion-button {
+      --border-radius: 12px;
+      width: 100px;
+    }
+  }
+
+}
+}

@@ -1,0 +1,38 @@
+.living-room-top-bar {
+  --background: trasparent;
+
+  .sc-ion-buttons-md-s .button-has-icon-only.button-clear {
+    width: 52px;
+    height: 52px;
+
+    ion-icon {
+      font-size: 28px;
+    }
+  }
+
+  .room-info {
+    --background: transparent;
+
+    .room-info-row {
+      display: flex;
+      align-items: center;
+      margin-inline-start: 12px;
+
+      ion-text {
+        font-size: 12px;
+        margin-inline-start: 4px;
+      }
+
+      ion-icon {
+        font-size: 16px;
+        pointer-events: none;
+      }
+    }
+
+    ion-spinner {
+      width: 12px;
+      height: 12px;
+      margin-left: 8px;
+    }
+  }
+}

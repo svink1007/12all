@@ -1,0 +1,16 @@
+.signup-container {
+  ion-item {
+    --background: transparent !important;
+    --border-width: 0 !important;
+    --border-color: transparent !important;
+
+    ion-checkbox {
+      --background-checked: transparent !important;
+      --background: transparent !important;
+    }
+
+    ion-label {
+      border-color: transparent !important;
+    }
+  }
+}

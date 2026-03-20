@@ -1,0 +1,17 @@
+.reset-password-container {
+  min-width: 576px;
+
+  ion-item {
+    &::part(native) {
+      border-bottom-color: #9f9f9f;
+    }
+  }
+
+  ion-button {
+    margin-top: 20px;
+  }
+
+  @media (max-width: 576px) {
+    min-width: auto;
+  }
+}

@@ -1,0 +1,29 @@
+.progress-loader {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 100;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  ion-card-content {
+    padding: 24px 40px 32px;
+
+    ion-progress-bar {
+      width: 300px;
+      margin-top: 4px;
+    }
+  }
+
+  ion-footer {
+    text-align: end;
+    padding: 4px;
+
+    ion-back-button {
+      display: inline-block;
+    }
+  }
+}

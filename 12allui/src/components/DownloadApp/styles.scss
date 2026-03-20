@@ -1,0 +1,11 @@
+.download-app-component {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .app-already-installed,
+  .continue-using-web {
+    margin-top: 16px;
+    font-size: 14px;
+  }
+}

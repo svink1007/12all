@@ -1,0 +1,13 @@
+.contact-us-container {
+  width: var(--custom-md);
+
+  .field-error {
+    font-size: 12px;
+    margin-top: 12px;
+    padding-inline-start: 12px;
+  }
+
+  .required {
+    font-size: 12px;
+  }
+}

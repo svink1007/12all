@@ -1,0 +1,16 @@
+.notifications-page {
+  width: 900px;
+
+  .allow-notifications .subtitle {
+    font-size: 12px;
+  }
+
+  .notifications-not-supported {
+    display: flex;
+    justify-content: center;
+  }
+
+  ion-toggle {
+    --background-checked: rgba(164, 36, 79, 0.5);
+  }
+}

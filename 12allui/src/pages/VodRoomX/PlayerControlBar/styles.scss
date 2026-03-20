@@ -1,0 +1,98 @@
+@import "src/shared/mixins";
+
+.player-control-bar {
+  position: absolute;
+  bottom: 22%;
+  width: 80%;
+  height: 80%;
+  animation: fadeout 1s forwards 0.5s;
+  display: flex;
+  align-items: flex-end;
+  z-index: 1;
+
+  &:hover {
+    animation: fadein 0.5s forwards;
+  }
+
+  @include fade-frames;
+
+  .player-control-bar-inner {
+    background-color: rgba(0, 0, 0, 0.9);
+    display: flex;
+    padding: 4px 20px;
+    width: 100%;
+  }
+
+  .file-list {
+    bottom: 72px;
+    position: absolute;
+    left: 16px;
+    max-height: 350px;
+    overflow: auto;
+
+    ion-label {
+      max-width: 300px;
+      text-overflow: ellipsis;
+    }
+  }
+
+  .controllers {
+    flex: 1;
+
+    ion-button.button-has-icon-only.button-clear {
+      margin: 0 4px;
+
+      &::part(native) {
+        width: auto;
+        height: auto;
+      }
+
+      ion-icon {
+        font-size: 30px;
+      }
+    }
+  }
+
+  .video-volume {
+    width: 180px;
+    --padding-start: 0;
+    --background: transparent;
+
+    ion-range {
+      padding-inline-start: 12px;
+    }
+  }
+
+  .video-seek {
+    width: 100%;
+    --background: transparent;
+
+    ion-item {
+      --background: transparent;
+    }
+  }
+
+  @media (max-width: 1084px) {
+    height: auto;
+    z-index: 100000;
+  }
+
+  @media (max-width: 992px) {
+    .file-list {
+      max-height: 200px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .file-list {
+      max-height: 160px;
+    }
+
+    .play-back-btn,
+    .play-forward-btn,
+    .track-seek,
+    .mute-btn {
+      display: none;
+    }
+  }
+}

@@ -1,0 +1,15 @@
+.favorites-page {
+
+  --offset-top: 30px !important;
+
+  &::part(scroll) {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .content {
+    .shared-stream-item {
+      width: 14%;
+    }
+  }
+}

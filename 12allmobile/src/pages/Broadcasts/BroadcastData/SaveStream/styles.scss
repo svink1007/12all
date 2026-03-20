@@ -1,0 +1,62 @@
+.save-stream-modal {
+  ion-toolbar {
+    ion-button.submit-form-button {
+      // Keep this, because when the button is disabled, it stays disabled event when all is good
+      background-color: var(--ion-toolbar-background);
+    }
+  }
+
+  .select-logo-component,
+  .language-item,
+  .genre-item,
+  .country-item,
+  .row-item {
+    margin: 4px;
+  }
+
+  .validate-stream-button {
+    align-self: center;
+  }
+
+  .stream-supported-formats {
+    font-size: 12px;
+    display: block;
+    padding: 4px 20px;
+  }
+
+  .stream-validation-item {
+    ion-item {
+      --min-height: 24px;
+
+      ion-icon {
+        font-size: 18px;
+      }
+
+      ion-text {
+        margin-inline-start: 4px;
+        font-size: 13px;
+      }
+    }
+
+    .validating-stream {
+      display: flex;
+      align-items: center;
+
+      ion-spinner {
+        $dim: 16px;
+        width: $dim;
+        height: $dim;
+      }
+
+      ion-text {
+        margin-inline-start: 8px;
+      }
+    }
+  }
+
+  .saving-stream {
+    ion-text {
+      margin-inline-start: 8px;
+    }
+  }
+}

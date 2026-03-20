@@ -1,0 +1,56 @@
+.app-footer {
+  $width: var(--custom-full-width);
+  text-align: center;
+
+  ion-toolbar {
+    ion-list {
+      width: $width;
+      display: inline-flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-top: 4px;
+      padding-bottom: 0;
+      background: transparent;
+
+      ion-buttons {
+        ion-button {
+          text-transform: none;
+          font-size: 12px;
+        }
+      }
+
+      ion-img {
+        padding-inline-start: 20px;
+
+        &::part(image) {
+          width: auto;
+          height: 40px;
+        }
+      }
+    }
+  }
+
+  .copyright {
+    width: $width;
+    position: relative;
+    z-index: 10;
+    display: inline-block;
+    padding: 8px 20px;
+    font-size: 12px;
+    text-align: start;
+    background: black;
+  }
+
+  @media (max-width: 1200px)  {
+    ion-toolbar ion-list,
+    .copyright {
+      width: 100%;
+    }
+  }
+
+  @media (max-width: 576px) {
+    ion-toolbar ion-list ion-img::part(image) {
+      height: 32px;
+    }
+  }
+}

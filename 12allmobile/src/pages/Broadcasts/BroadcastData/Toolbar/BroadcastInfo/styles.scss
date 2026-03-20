@@ -1,0 +1,13 @@
+@import "../../../../../shared/mixins";
+
+.broadcast-info-modal {
+  @include modal-auto-height;
+
+  --width: 380px;
+
+  ion-item {
+    --background: var(--ion-toolbar-background);
+    --padding-start: 0;
+    --inner-padding-end: 0;
+  }
+}

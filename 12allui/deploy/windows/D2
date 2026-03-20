@@ -1,0 +1,29 @@
+# Use Node.js version 14.21.3
+FROM node:14.21.3
+
+# Set working directory inside the container
+WORKDIR /app
+
+# Install Python and other dependencies
+RUN apt-get update && \
+    apt-get install -y python3 make g++ curl vim && \
+    [ -e /usr/bin/python ] || ln -s /usr/bin/python3 /usr/bin/python
+
+# Install specific version of Yarn
+RUN npm install -g yarn@1.22.22 --force
+
+# Copy package.json and yarn.lock
+COPY package.json yarn.lock ./
+#### COPY deploy/.env.productio . 
+
+# Install dependencies with Yarn
+RUN yarn install
+
+# Copy the rest of the application code
+COPY . .
+
+# Expose port (if your app runs on a specific port, e.g., 3000)
+EXPOSE 3000
+
+# Default command
+CMD ["yarn", "run", "serve:development"]

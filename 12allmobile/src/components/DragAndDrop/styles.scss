@@ -1,0 +1,40 @@
+.dropzone-container {
+  width: fit-content;
+  position: relative;
+
+  .dropzone {
+    width: 171px;
+    height: 96px;
+    border: 1px dashed #707070;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    transition: all 0.3s;
+    position: relative;
+    overflow: hidden;
+  }
+  .upload-img {
+    position: absolute;
+    bottom: -10px;
+    right: -10px;
+    width: 40px;
+    height: 40px;
+  }
+}
+
+.dropzone.over {
+  border-color: #3333ff;
+  color: #3333ff;
+}
+
+.preview-image {
+  width: 62px;
+  height: 62px;
+  object-fit: cover;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

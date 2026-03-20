@@ -1,0 +1,44 @@
+.validate-media {
+  &.files {
+    .media-status {
+      justify-content: center;
+    }
+  }
+
+  .supported-formats {
+    font-size: 12px;
+    padding: 0 16px;
+    margin: 8px 0;
+  }
+
+  .media-status {
+    padding: 0 20px;
+    margin: 12px 0 8px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    &.files {
+      justify-content: center;
+      max-height: 400px;
+      overflow: auto;
+    }
+
+    ion-text {
+      width: auto;
+      text-align: start;
+      font-size: 14px;
+    }
+  }
+
+  .media-status {
+    ion-icon {
+      font-size: 20px;
+      vertical-align: bottom;
+    }
+
+    ion-spinner {
+      vertical-align: middle;
+    }
+  }
+}

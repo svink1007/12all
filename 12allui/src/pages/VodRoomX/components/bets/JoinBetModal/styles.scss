@@ -1,0 +1,260 @@
+.bets-modal {
+    --background: #662C4B;
+    // width: 653px;
+    // height: 623px;
+    border-radius: 10px;
+    @media only screen and (max-width: 768px) {
+        height: calc(100% - 20px);
+        margin: auto auto;
+        width: 96%;
+    }    
+}
+
+select {
+    color: #000;
+}
+
+.bets-join-modal-container {
+    text-align: center;
+    margin-top: 48px;
+    padding: 0 50px;
+    font-size: 18px;
+    min-height: 400px;
+
+    @media only screen and (max-width: 768px) {
+        padding: 0 18px;
+    }
+    
+    .margin-auto {
+        margin: 0 auto;
+    }
+
+    .form-container {
+        margin-top: 0px;
+        padding-bottom: 20px;
+        min-height: 397px;
+
+        form.join-form {
+            min-height: 349px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+    }
+
+    ion-item {
+        --background: #FFF;
+        --min-height: 28px;
+        --border-color: #FFF;
+        height: 33px;
+        border-radius: 4px;
+
+        ion-input {
+            color: #000;
+        }
+    }
+
+    input {
+        background-color: #FFF;
+        border-radius: 4px;
+        border: 1px solid #FFF;
+        color: #000;
+    }
+
+    .field-star-container {
+        width: 152px;
+        height: 33px;
+        border-radius: 4px;
+        border: 1px solid #FFF;
+        text-align: left;
+        background-color: #FFF;
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+
+    input:first-child {
+        width: 150px;
+        height: 33px;
+        text-align: center;
+
+    }
+
+    .field-star-container:after {
+        content: url('../../../../../images/icons/star-sharp.svg');
+        width: 20px;
+        height: 20px;
+        position: relative;
+        top: -30px;
+        opacity: 1;
+        left: 117px;
+        transform: scale(.7);
+        display: block;
+        z-index: 99;
+    }
+
+    .game-name {
+        ion-item {
+            text-align: center;
+            height: 60px;
+
+            ion-input {
+                height: 60px;
+            }
+        }
+    }
+
+    .game-lock {
+        margin: 20px auto 10px auto;
+        width: 260px;
+        font-size: 12px;
+
+        input {
+            text-align: center;
+        }
+    }
+
+    ion-checkbox {
+        margin-right: 10px;
+        margin-top: 11px;
+    }
+
+    ion-select {
+        background: #FFF;
+        height: 33px;
+        border-radius: 4px;
+        color:#000;
+        
+        .select-icon {
+            color: #707070;
+            margin-right: 5px;
+        }
+
+        .select-text {
+            color: #000;
+            font-size: 12px;
+            text-align: left;            
+        }
+
+        .ion-sel-18-lbl {
+            color: #000;
+        }
+    }
+
+    .value-score {
+        font-size: 12px;
+        margin-bottom: 5px;
+    }
+
+    .text-left {
+        text-align: left;
+    }
+
+    .add-choice {    
+
+        input {
+            font-size: 12px;
+            text-align: left;
+        }
+
+
+    }
+
+    .add-choice:first-child {
+        margin-top: 30px;
+    }
+
+    .add-choice-button {
+        font-size: 12px;
+        text-transform: capitalize;    
+        
+        button {
+            box-shadow: none;
+            --box-shadow: none;
+        }
+    }
+
+    .user-stars-balance {
+        background-color: #000;
+        position: absolute;
+        top: -15px;
+        height: 40px;
+        width: 330px;
+        border: #FFF 1px solid;
+        border-radius: 8px;
+        left: calc((100% - 330px) / 2);
+        font-size: 16px;
+        padding-top: 6px;
+    }
+
+    .games-stars-balance {
+        background-color: none;
+        position: relative;        
+        height: 40px;
+        width: 87%;
+        border: #FFF 1px solid;
+        border-radius: 8px;
+        margin: 0 auto;
+        font-size: 16px;
+        padding-top: 6px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-bottom: 17px;
+        cursor: pointer;
+    }
+
+    .games-stars-balance:hover {
+        background-color: #000;
+    }
+
+
+
+    .active {
+        background-color: #000;
+    }
+
+    .games-stars-balance div.game-index {
+        padding-left: 10px;
+    }
+
+    .bet-games-list-join {
+        background: none;
+
+        ion-item {
+            --background: none;
+            height: 43px;
+        }
+    }
+
+    .selected-game span {
+        font-size: 16px;
+    }
+}
+
+
+// ion-select-popover {
+//     ion-list {
+//         background: #FFF;
+
+//         ion-radio-group{
+//         ion-item {
+//             --background: #FFF;
+
+//         }
+//     }
+//     }
+// }
+// ion-label, label {
+//     color: #000;
+// }
+
+// ion-popover.select-popover-bets {
+//     z-index: 47018 !important; /* Make sure it’s higher than the dialog */
+//   }
+
+@media only screen and (min-width: 768px) and (min-height: 600px) {
+    ion-modal {
+        --height: auto;
+        --overflow: visible;
+    } 
+}

@@ -1,0 +1,39 @@
+# Use Node.js version 18.0.0
+FROM node:18.0.0
+
+# Set working directory inside the container
+WORKDIR /app
+
+# Install Python for node-gyp dependencies
+RUN apt-get update && apt-get install -y python3 make g++ && \
+    ln -s /usr/bin/python3 /usr/bin/python
+
+RUN apt-get update && apt-get install -y \
+    curl \
+    vim
+
+# Install specific version of npm
+# RUN npm install -g npm@8.6.0
+# RUN npm audit fix --force
+
+# Install specific version of Yarn
+RUN npm install -g yarn@1.22.18 --force
+
+
+# Copy package.json and yarn.lock
+COPY package.json yarn.lock ./
+
+# Ensure node-sass is removed, and run npm install with legacy-peer-deps
+# RUN sed -i '/node-sass/d' package.json &&
+# RUN npm install --legacy-peer-deps
+
+RUN yarn install --legacy-peer-deps
+
+# Copy the rest of the application code
+COPY . .
+
+# Expose port (if your app runs on a specific port, e.g., 3000)
+EXPOSE 3000
+
+# Default command
+CMD ["yarn", "start"]

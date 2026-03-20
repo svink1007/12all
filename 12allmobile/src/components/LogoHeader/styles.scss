@@ -1,0 +1,9 @@
+.logo-header {
+  padding: 0 4px;
+
+  .logo {
+    &::part(image) {
+      margin: 0 auto;
+    }
+  }
+}

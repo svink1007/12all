@@ -1,0 +1,25 @@
+.search-page {
+
+  --offset-top: 30px !important;
+
+  .streams,
+  .live,
+  .upcoming {
+    background: transparent;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 200px);
+    justify-content: space-between;
+    gap: 8px;
+    padding: 16px;
+  }
+
+  .search-empty-stream {
+    .see-all-channels {
+      display: flex;
+      justify-content: center;
+      text-decoration: underline;
+      text-underline-offset: 2px;
+      cursor: pointer;
+    }
+  }
+}

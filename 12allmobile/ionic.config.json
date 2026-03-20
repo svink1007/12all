@@ -1,0 +1,7 @@
+{
+  "name": "12allmobile",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react"
+}

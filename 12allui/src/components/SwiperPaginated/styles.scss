@@ -1,0 +1,28 @@
+.swiper-paginated {
+  .swiper-slide {
+    text-align: center;
+  }
+
+  .swiper-pagination {
+    //position: static;
+    //margin-top: 4px;
+    bottom: 16px;
+
+    .swiper-pagination-bullet {
+      border-radius: 0;
+      width: 28px;
+      height: 4px;
+      background: var(--ion-color-primary);
+      opacity: .2;
+    }
+
+    .swiper-pagination-bullet-active {
+      opacity: 1;
+    }
+  }
+
+  .swiper-button-prev,
+  .swiper-button-next {
+    color: white;
+  }
+}

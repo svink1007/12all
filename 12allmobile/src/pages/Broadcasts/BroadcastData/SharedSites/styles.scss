@@ -1,0 +1,44 @@
+.shared-sites-component {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-end;
+  width: 100%;
+
+  ion-item {
+    --background: transparent;
+    margin: 8px 0;
+    --min-height: 96px;
+    box-sizing: border-box;
+
+    &::part(native) {
+      flex-direction: column;
+    }
+
+    ion-img {
+      padding-top: 8px;
+      width: 50%;
+    }
+
+    ion-text {
+      margin: 8px 0;
+      font-size: 14px;
+    }
+
+    @media (max-width: 1024px) {
+      width: 25%;
+    }
+
+    @media (max-width: 768px) {
+      width: 33%;
+    }
+
+    @media (max-width: 576px) {
+      width: 50%;
+    }
+
+    @media (max-width: 375px) {
+      width: 100%;
+    }
+  }
+}

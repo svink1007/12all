@@ -1,0 +1,23 @@
+.left-nav-menu-container {
+  display: flex;
+  width: 20%;
+
+  .nav-list {
+    display: flex;
+    flex-direction: column;
+    background: transparent;
+    gap: 10px;
+    width: 100%;
+
+    .nav-item {
+      --background: #353535;
+      :hover {
+        cursor: pointer;
+      }
+    }
+
+    .active-nav {
+      --background: #662C4B;
+    }
+  }
+}

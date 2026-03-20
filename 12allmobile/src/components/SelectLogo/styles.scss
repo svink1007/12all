@@ -1,0 +1,10 @@
+.select-logo-component {
+  --padding-start: 0;
+  --inner-padding-end: 0;
+
+  .default-icon-avatar,
+  ion-avatar {
+    margin-left: 12px;
+    margin-right: 20px;
+  }
+}

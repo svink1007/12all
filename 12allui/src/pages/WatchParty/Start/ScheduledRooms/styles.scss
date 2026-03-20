@@ -1,0 +1,56 @@
+.scheduled-rooms-list {
+  background: transparent;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+
+  ion-content {
+    .room-group-item {
+      margin-bottom: 4px;
+
+      .room-data,
+      .on-air {
+        margin-bottom: 0;
+      }
+
+      .room-data {
+        position: relative;
+
+        .meta {
+          flex: 1;
+          margin-inline-start: 8px;
+
+          ion-text {
+            font-size: 12px;
+          }
+
+          .share {
+            margin-inline-end: 8px;
+            background: var(--ion-color-step-200);
+            padding: 2px;
+          }
+
+          .mode {
+            font-size: 11px;
+            margin-inline-start: 8px;
+            padding: 2px;
+
+            &.public {
+              background: var(--ion-color-step-300);
+            }
+
+            &.private {
+              background: var(--ion-color-tertiary);
+            }
+          }
+        }
+      }
+
+      .on-air {
+        ion-button {
+          font-size: 12px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,25 @@
+@import "../../shared/mixins";
+
+.genre-item {
+  align-items: center;
+  flex: 1;
+  margin-bottom: 0;
+
+  @include fixed-label-full-width;
+
+  input {
+    cursor: pointer;
+  }
+
+  .caret-icon {
+    @include caret-icon;
+  }
+}
+
+.select-genre-modal {
+  .modal-wrapper {
+    padding-top: 8px;
+  }
+
+  @include searchable-modal;
+}

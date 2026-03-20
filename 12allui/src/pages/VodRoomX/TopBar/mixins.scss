@@ -1,0 +1,16 @@
+@mixin living-room-top-bar-fullscreen {
+  .living-room-top-bar {
+    position: fixed;
+    top: 0;
+
+    .sc-ion-buttons-md-s .button-has-icon-only.button-clear {
+      $dim: 60px;
+      width: $dim;
+      height: $dim;
+
+      ion-icon {
+        font-size: 32px;
+      }
+    }
+  }
+}
